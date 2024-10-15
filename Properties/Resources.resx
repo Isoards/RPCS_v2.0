@@ -148,4 +148,13 @@
   <data name="robot_v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\robot_v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Pretendard_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pretendard_Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pretendard_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pretendard_Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pretendard_Variable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PretendardVariable.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

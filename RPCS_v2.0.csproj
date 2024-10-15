@@ -72,6 +72,7 @@
     <Compile Include="editMacroForm_RPCS.Designer.cs">
       <DependentUpon>editMacroForm_RPCS.cs</DependentUpon>
     </Compile>
+    <Compile Include="FontManager.cs" />
     <Compile Include="mainForm_RPCS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +129,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\PretendardVariable.ttf" />
+    <None Include="Resources\Pretendard_Bold.ttf" />
+    <None Include="Resources\Pretendard_Regular.ttf" />
     <None Include="Resources\turntable.png" />
   </ItemGroup>
   <ItemGroup>

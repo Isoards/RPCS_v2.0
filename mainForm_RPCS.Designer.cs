@@ -13,8 +13,11 @@ namespace RPCS
         /// 필수 디자이너 변수입니다.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        Font Pretendard_Regular_12 = new Font(FontManager.fontFamilys[0], 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+        Font Pretendard_Bold_16 = new Font(FontManager.fontFamilys[0], 15.75f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
 
 
+        //Font font1 = new Font(FontManager.fontFamilys[1], 15.75f, FontStyle.Bold, GraphicsUnit.Point, 129);
         /// <summary>
         /// 사용 중인 모든 리소스를 정리합니다.
         /// </summary>
@@ -34,6 +37,7 @@ namespace RPCS
         /// 디자이너 지원에 필요한 메서드입니다. 
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
         /// </summary>
+        /// 
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -230,20 +234,18 @@ namespace RPCS
             // lblOperationHours
             // 
             this.lblOperationHours.AutoSize = true;
-            this.lblOperationHours.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblOperationHours.Location = new System.Drawing.Point(197, 91);
             this.lblOperationHours.Name = "lblOperationHours";
-            this.lblOperationHours.Size = new System.Drawing.Size(128, 25);
+            this.lblOperationHours.Size = new System.Drawing.Size(65, 12);
             this.lblOperationHours.TabIndex = 13;
             this.lblOperationHours.Text = "00 : 00 : 00";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label30.Location = new System.Drawing.Point(12, 91);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(175, 25);
+            this.label30.Size = new System.Drawing.Size(96, 12);
             this.label30.TabIndex = 12;
             this.label30.Text = "Operation Hours";
             // 
@@ -263,10 +265,9 @@ namespace RPCS
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(12, 7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(172, 25);
+            this.label9.Size = new System.Drawing.Size(95, 12);
             this.label9.TabIndex = 10;
             this.label9.Text = "Operation Mode";
             // 
@@ -341,17 +342,16 @@ namespace RPCS
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(210, 7);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(145, 25);
+            this.label34.Size = new System.Drawing.Size(81, 12);
             this.label34.TabIndex = 15;
             this.label34.Text = "Control Panel";
             // 
             // btn_settings
             // 
             this.btn_settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_settings.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_settings.Font = Pretendard_Regular_12;
             this.btn_settings.ForeColor = System.Drawing.Color.White;
             this.btn_settings.Location = new System.Drawing.Point(215, 102);
             this.btn_settings.Margin = new System.Windows.Forms.Padding(2);
@@ -365,7 +365,7 @@ namespace RPCS
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button14.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button14.Font = Pretendard_Regular_12;
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(215, 68);
             this.button14.Margin = new System.Windows.Forms.Padding(2);
@@ -378,7 +378,7 @@ namespace RPCS
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button13.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button13.Font = Pretendard_Regular_12;
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(215, 34);
             this.button13.Margin = new System.Windows.Forms.Padding(2);
@@ -411,10 +411,9 @@ namespace RPCS
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(197, 25);
+            this.label8.Size = new System.Drawing.Size(108, 12);
             this.label8.TabIndex = 9;
             this.label8.Text = "Connection Status";
             // 
@@ -443,10 +442,9 @@ namespace RPCS
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(12, 12);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(192, 25);
+            this.label10.Size = new System.Drawing.Size(113, 12);
             this.label10.TabIndex = 10;
             this.label10.Text = "1 .TurnTable Angle";
             // 
@@ -487,10 +485,9 @@ namespace RPCS
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(12, 12);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(177, 25);
+            this.label11.Size = new System.Drawing.Size(100, 12);
             this.label11.TabIndex = 11;
             this.label11.Text = "2. Robot Position";
             // 
@@ -648,10 +645,9 @@ namespace RPCS
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 25);
+            this.label6.Size = new System.Drawing.Size(78, 12);
             this.label6.TabIndex = 5;
             this.label6.Text = "Current State";
             // 
@@ -808,7 +804,7 @@ namespace RPCS
             // btn_macro1
             // 
             this.btn_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_macro1.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_macro1.Font = Pretendard_Regular_12;
             this.btn_macro1.ForeColor = System.Drawing.Color.White;
             this.btn_macro1.Location = new System.Drawing.Point(0, 94);
             this.btn_macro1.Margin = new System.Windows.Forms.Padding(2);
@@ -902,10 +898,9 @@ namespace RPCS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 25);
+            this.label3.Size = new System.Drawing.Size(90, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "Target Position";
             // 
@@ -950,7 +945,7 @@ namespace RPCS
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label71.Font = Pretendard_Regular_12;
             this.label71.Location = new System.Drawing.Point(382, 100);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(29, 19);
@@ -960,7 +955,7 @@ namespace RPCS
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label70.Font = Pretendard_Regular_12;
             this.label70.Location = new System.Drawing.Point(343, 101);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(29, 19);
@@ -970,7 +965,7 @@ namespace RPCS
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label69.Font = Pretendard_Regular_12;
             this.label69.Location = new System.Drawing.Point(304, 101);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(29, 19);
@@ -988,7 +983,7 @@ namespace RPCS
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label68.Font = Pretendard_Regular_12;
             this.label68.Location = new System.Drawing.Point(248, 101);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(29, 19);
@@ -998,7 +993,7 @@ namespace RPCS
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label67.Font = Pretendard_Regular_12;
             this.label67.Location = new System.Drawing.Point(208, 101);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(29, 19);
@@ -1008,7 +1003,7 @@ namespace RPCS
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Font = Pretendard_Regular_12;
             this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             this.label46.Location = new System.Drawing.Point(152, 101);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1020,7 +1015,7 @@ namespace RPCS
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label66.Font = Pretendard_Regular_12;
             this.label66.Location = new System.Drawing.Point(168, 101);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(29, 19);
@@ -1030,7 +1025,7 @@ namespace RPCS
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = Pretendard_Regular_12;
             this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             this.label41.Location = new System.Drawing.Point(329, 100);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1042,7 +1037,7 @@ namespace RPCS
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Font = Pretendard_Regular_12;
             this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             this.label42.Location = new System.Drawing.Point(368, 100);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1054,7 +1049,7 @@ namespace RPCS
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Font = Pretendard_Regular_12;
             this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             this.label43.Location = new System.Drawing.Point(286, 101);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1066,7 +1061,7 @@ namespace RPCS
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Font = Pretendard_Regular_12;
             this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             this.label44.Location = new System.Drawing.Point(232, 101);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1078,7 +1073,7 @@ namespace RPCS
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Font = Pretendard_Regular_12;
             this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             this.label45.Location = new System.Drawing.Point(192, 101);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1240,10 +1235,9 @@ namespace RPCS
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 25);
+            this.label5.Size = new System.Drawing.Size(85, 12);
             this.label5.TabIndex = 5;
             this.label5.Text = "World Position";
             // 
@@ -1400,10 +1394,9 @@ namespace RPCS
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 25);
+            this.label4.Size = new System.Drawing.Size(80, 12);
             this.label4.TabIndex = 7;
             this.label4.Text = "User Position";
             // 
@@ -1794,20 +1787,18 @@ namespace RPCS
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(12, 12);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(152, 25);
+            this.label31.Size = new System.Drawing.Size(87, 12);
             this.label31.TabIndex = 5;
             this.label31.Text = "Task Manager";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(185, 25);
+            this.label7.Size = new System.Drawing.Size(105, 12);
             this.label7.TabIndex = 8;
             this.label7.Text = "Batch Processing";
             // 
@@ -1880,10 +1871,9 @@ namespace RPCS
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(12, 12);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(222, 25);
+            this.label35.Size = new System.Drawing.Size(125, 12);
             this.label35.TabIndex = 5;
             this.label35.Text = "Robot Movement Log";
             // 
@@ -1902,10 +1892,9 @@ namespace RPCS
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(12, 12);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(229, 25);
+            this.label36.Size = new System.Drawing.Size(130, 12);
             this.label36.TabIndex = 5;
             this.label36.Text = "Batch Completion Log";
             // 

@@ -33,6 +33,7 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tab_macro1 = new System.Windows.Forms.TabPage();
+            this.btn_save1 = new System.Windows.Forms.Button();
             this.tb_macro1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -46,9 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tab_macro2 = new System.Windows.Forms.TabPage();
-            this.tab_macro3 = new System.Windows.Forms.TabPage();
-            this.tab_macro4 = new System.Windows.Forms.TabPage();
-            this.btn_save1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -65,6 +63,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.tab_macro3 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -81,6 +80,7 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.tab_macro4 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -132,10 +132,10 @@
             this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_exit.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(332, 241);
+            this.btn_exit.Location = new System.Drawing.Point(312, 241);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(86, 43);
+            this.btn_exit.Size = new System.Drawing.Size(106, 43);
             this.btn_exit.TabIndex = 60;
             this.btn_exit.Text = "EXIT";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -181,6 +181,19 @@
             this.tab_macro1.Size = new System.Drawing.Size(423, 296);
             this.tab_macro1.TabIndex = 0;
             this.tab_macro1.Text = "Macro 1";
+            // 
+            // btn_save1
+            // 
+            this.btn_save1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
+            this.btn_save1.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save1.ForeColor = System.Drawing.Color.White;
+            this.btn_save1.Location = new System.Drawing.Point(5, 241);
+            this.btn_save1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_save1.Name = "btn_save1";
+            this.btn_save1.Size = new System.Drawing.Size(114, 43);
+            this.btn_save1.TabIndex = 74;
+            this.btn_save1.Text = "SAVE";
+            this.btn_save1.UseVisualStyleBackColor = false;
             // 
             // tb_macro1
             // 
@@ -334,71 +347,6 @@
             this.tab_macro2.Size = new System.Drawing.Size(423, 296);
             this.tab_macro2.TabIndex = 1;
             this.tab_macro2.Text = "Macro 2";
-            // 
-            // tab_macro3
-            // 
-            this.tab_macro3.BackColor = System.Drawing.Color.White;
-            this.tab_macro3.Controls.Add(this.button3);
-            this.tab_macro3.Controls.Add(this.textBox13);
-            this.tab_macro3.Controls.Add(this.button4);
-            this.tab_macro3.Controls.Add(this.label14);
-            this.tab_macro3.Controls.Add(this.textBox14);
-            this.tab_macro3.Controls.Add(this.label15);
-            this.tab_macro3.Controls.Add(this.textBox15);
-            this.tab_macro3.Controls.Add(this.label16);
-            this.tab_macro3.Controls.Add(this.textBox16);
-            this.tab_macro3.Controls.Add(this.label17);
-            this.tab_macro3.Controls.Add(this.textBox17);
-            this.tab_macro3.Controls.Add(this.label18);
-            this.tab_macro3.Controls.Add(this.label19);
-            this.tab_macro3.Controls.Add(this.textBox18);
-            this.tab_macro3.Controls.Add(this.textBox19);
-            this.tab_macro3.Controls.Add(this.label20);
-            this.tab_macro3.Location = new System.Drawing.Point(4, 37);
-            this.tab_macro3.Name = "tab_macro3";
-            this.tab_macro3.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_macro3.Size = new System.Drawing.Size(423, 296);
-            this.tab_macro3.TabIndex = 2;
-            this.tab_macro3.Text = "Macro 3";
-            // 
-            // tab_macro4
-            // 
-            this.tab_macro4.BackColor = System.Drawing.Color.White;
-            this.tab_macro4.Controls.Add(this.button5);
-            this.tab_macro4.Controls.Add(this.textBox20);
-            this.tab_macro4.Controls.Add(this.button6);
-            this.tab_macro4.Controls.Add(this.label21);
-            this.tab_macro4.Controls.Add(this.textBox21);
-            this.tab_macro4.Controls.Add(this.label22);
-            this.tab_macro4.Controls.Add(this.textBox22);
-            this.tab_macro4.Controls.Add(this.label24);
-            this.tab_macro4.Controls.Add(this.textBox23);
-            this.tab_macro4.Controls.Add(this.label25);
-            this.tab_macro4.Controls.Add(this.textBox24);
-            this.tab_macro4.Controls.Add(this.label26);
-            this.tab_macro4.Controls.Add(this.label27);
-            this.tab_macro4.Controls.Add(this.textBox25);
-            this.tab_macro4.Controls.Add(this.textBox26);
-            this.tab_macro4.Controls.Add(this.label28);
-            this.tab_macro4.Location = new System.Drawing.Point(4, 37);
-            this.tab_macro4.Name = "tab_macro4";
-            this.tab_macro4.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_macro4.Size = new System.Drawing.Size(423, 296);
-            this.tab_macro4.TabIndex = 3;
-            this.tab_macro4.Text = "Macro 4";
-            // 
-            // btn_save1
-            // 
-            this.btn_save1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_save1.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save1.ForeColor = System.Drawing.Color.White;
-            this.btn_save1.Location = new System.Drawing.Point(5, 241);
-            this.btn_save1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_save1.Name = "btn_save1";
-            this.btn_save1.Size = new System.Drawing.Size(95, 43);
-            this.btn_save1.TabIndex = 74;
-            this.btn_save1.Text = "SAVE";
-            this.btn_save1.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -573,6 +521,32 @@
             this.label13.TabIndex = 75;
             this.label13.Text = "X";
             // 
+            // tab_macro3
+            // 
+            this.tab_macro3.BackColor = System.Drawing.Color.White;
+            this.tab_macro3.Controls.Add(this.button3);
+            this.tab_macro3.Controls.Add(this.textBox13);
+            this.tab_macro3.Controls.Add(this.button4);
+            this.tab_macro3.Controls.Add(this.label14);
+            this.tab_macro3.Controls.Add(this.textBox14);
+            this.tab_macro3.Controls.Add(this.label15);
+            this.tab_macro3.Controls.Add(this.textBox15);
+            this.tab_macro3.Controls.Add(this.label16);
+            this.tab_macro3.Controls.Add(this.textBox16);
+            this.tab_macro3.Controls.Add(this.label17);
+            this.tab_macro3.Controls.Add(this.textBox17);
+            this.tab_macro3.Controls.Add(this.label18);
+            this.tab_macro3.Controls.Add(this.label19);
+            this.tab_macro3.Controls.Add(this.textBox18);
+            this.tab_macro3.Controls.Add(this.textBox19);
+            this.tab_macro3.Controls.Add(this.label20);
+            this.tab_macro3.Location = new System.Drawing.Point(4, 37);
+            this.tab_macro3.Name = "tab_macro3";
+            this.tab_macro3.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_macro3.Size = new System.Drawing.Size(423, 296);
+            this.tab_macro3.TabIndex = 2;
+            this.tab_macro3.Text = "Macro 3";
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
@@ -745,6 +719,32 @@
             this.label20.Size = new System.Drawing.Size(31, 32);
             this.label20.TabIndex = 75;
             this.label20.Text = "X";
+            // 
+            // tab_macro4
+            // 
+            this.tab_macro4.BackColor = System.Drawing.Color.White;
+            this.tab_macro4.Controls.Add(this.button5);
+            this.tab_macro4.Controls.Add(this.textBox20);
+            this.tab_macro4.Controls.Add(this.button6);
+            this.tab_macro4.Controls.Add(this.label21);
+            this.tab_macro4.Controls.Add(this.textBox21);
+            this.tab_macro4.Controls.Add(this.label22);
+            this.tab_macro4.Controls.Add(this.textBox22);
+            this.tab_macro4.Controls.Add(this.label24);
+            this.tab_macro4.Controls.Add(this.textBox23);
+            this.tab_macro4.Controls.Add(this.label25);
+            this.tab_macro4.Controls.Add(this.textBox24);
+            this.tab_macro4.Controls.Add(this.label26);
+            this.tab_macro4.Controls.Add(this.label27);
+            this.tab_macro4.Controls.Add(this.textBox25);
+            this.tab_macro4.Controls.Add(this.textBox26);
+            this.tab_macro4.Controls.Add(this.label28);
+            this.tab_macro4.Location = new System.Drawing.Point(4, 37);
+            this.tab_macro4.Name = "tab_macro4";
+            this.tab_macro4.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_macro4.Size = new System.Drawing.Size(423, 296);
+            this.tab_macro4.TabIndex = 3;
+            this.tab_macro4.Text = "Macro 4";
             // 
             // button5
             // 
