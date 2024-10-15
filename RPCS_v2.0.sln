@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCS_v2.0", "RPCS_v2.0.csproj", "{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Debug|x86.ActiveCfg = Debug|x86
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Debug|x86.Build.0 = Debug|x86
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Release|x86.ActiveCfg = Release|x86
+		{B9847DE6-E09B-4997-9809-8F4E8EC7D98A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BFE386A-531F-4496-88B0-CF73CF541505}
+	EndGlobalSection
+EndGlobal
