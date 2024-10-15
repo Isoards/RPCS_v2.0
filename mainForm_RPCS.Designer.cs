@@ -41,8 +41,8 @@ namespace RPCS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mod = new System.Windows.Forms.Panel();
             this.lblOperationHours = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -104,19 +104,6 @@ namespace RPCS
             this.label23 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.tb_r = new System.Windows.Forms.Label();
             this.tb_p = new System.Windows.Forms.Label();
@@ -189,9 +176,23 @@ namespace RPCS
             this.btn_emergencyStop = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_saveBatch = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
             this.mod.SuspendLayout();
             this.connection_status.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -205,7 +206,6 @@ namespace RPCS
             this.target_position.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.user_position.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -215,6 +215,7 @@ namespace RPCS
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mod
@@ -234,18 +235,20 @@ namespace RPCS
             // lblOperationHours
             // 
             this.lblOperationHours.AutoSize = true;
+            this.lblOperationHours.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOperationHours.Location = new System.Drawing.Point(197, 91);
             this.lblOperationHours.Name = "lblOperationHours";
-            this.lblOperationHours.Size = new System.Drawing.Size(65, 12);
+            this.lblOperationHours.Size = new System.Drawing.Size(123, 30);
             this.lblOperationHours.TabIndex = 13;
             this.lblOperationHours.Text = "00 : 00 : 00";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(12, 91);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(96, 12);
+            this.label30.Size = new System.Drawing.Size(180, 30);
             this.label30.TabIndex = 12;
             this.label30.Text = "Operation Hours";
             // 
@@ -255,7 +258,7 @@ namespace RPCS
             this.tgMod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tgMod.Cursor = System.Windows.Forms.Cursors.Default;
             this.tgMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tgMod.Location = new System.Drawing.Point(47, 40);
+            this.tgMod.Location = new System.Drawing.Point(47, 46);
             this.tgMod.Name = "tgMod";
             this.tgMod.Size = new System.Drawing.Size(328, 40);
             this.tgMod.TabIndex = 11;
@@ -265,9 +268,10 @@ namespace RPCS
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(12, 7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 12);
+            this.label9.Size = new System.Drawing.Size(178, 30);
             this.label9.TabIndex = 10;
             this.label9.Text = "Operation Mode";
             // 
@@ -342,16 +346,17 @@ namespace RPCS
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(210, 7);
+            this.label34.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(210, 3);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(81, 12);
+            this.label34.Size = new System.Drawing.Size(149, 30);
             this.label34.TabIndex = 15;
             this.label34.Text = "Control Panel";
             // 
             // btn_settings
             // 
             this.btn_settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_settings.Font = Pretendard_Regular_12;
+            this.btn_settings.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_settings.ForeColor = System.Drawing.Color.White;
             this.btn_settings.Location = new System.Drawing.Point(215, 102);
             this.btn_settings.Margin = new System.Windows.Forms.Padding(2);
@@ -365,7 +370,7 @@ namespace RPCS
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button14.Font = Pretendard_Regular_12;
+            this.button14.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(215, 68);
             this.button14.Margin = new System.Windows.Forms.Padding(2);
@@ -378,7 +383,7 @@ namespace RPCS
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button13.Font = Pretendard_Regular_12;
+            this.button13.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(215, 34);
             this.button13.Margin = new System.Windows.Forms.Padding(2);
@@ -411,9 +416,10 @@ namespace RPCS
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 7);
+            this.label8.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 12);
+            this.label8.Size = new System.Drawing.Size(196, 30);
             this.label8.TabIndex = 9;
             this.label8.Text = "Connection Status";
             // 
@@ -442,9 +448,10 @@ namespace RPCS
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 12);
+            this.label10.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(12, 7);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 12);
+            this.label10.Size = new System.Drawing.Size(203, 30);
             this.label10.TabIndex = 10;
             this.label10.Text = "1 .TurnTable Angle";
             // 
@@ -485,9 +492,10 @@ namespace RPCS
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 12);
+            this.label11.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 7);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 12);
+            this.label11.Size = new System.Drawing.Size(187, 30);
             this.label11.TabIndex = 11;
             this.label11.Text = "2. Robot Position";
             // 
@@ -645,9 +653,10 @@ namespace RPCS
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 12);
+            this.label6.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 7);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 12);
+            this.label6.Size = new System.Drawing.Size(146, 30);
             this.label6.TabIndex = 5;
             this.label6.Text = "Current State";
             // 
@@ -684,7 +693,7 @@ namespace RPCS
             // btn_editMacro
             // 
             this.btn_editMacro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_editMacro.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editMacro.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_editMacro.ForeColor = System.Drawing.Color.White;
             this.btn_editMacro.Location = new System.Drawing.Point(297, 8);
             this.btn_editMacro.Margin = new System.Windows.Forms.Padding(2);
@@ -698,7 +707,7 @@ namespace RPCS
             // btn_goto
             // 
             this.btn_goto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_goto.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_goto.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_goto.ForeColor = System.Drawing.Color.White;
             this.btn_goto.Location = new System.Drawing.Point(354, 94);
             this.btn_goto.Margin = new System.Windows.Forms.Padding(2);
@@ -707,11 +716,12 @@ namespace RPCS
             this.btn_goto.TabIndex = 31;
             this.btn_goto.Text = "Goto";
             this.btn_goto.UseVisualStyleBackColor = false;
+            this.btn_goto.Click += new System.EventHandler(this.btn_goto_Click);
             // 
             // btn_macro4
             // 
             this.btn_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_macro4.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_macro4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_macro4.ForeColor = System.Drawing.Color.White;
             this.btn_macro4.Location = new System.Drawing.Point(262, 94);
             this.btn_macro4.Margin = new System.Windows.Forms.Padding(2);
@@ -720,11 +730,12 @@ namespace RPCS
             this.btn_macro4.TabIndex = 30;
             this.btn_macro4.Text = "Macro 4";
             this.btn_macro4.UseVisualStyleBackColor = false;
+            this.btn_macro4.Click += new System.EventHandler(this.btn_macro4_Click);
             // 
             // btn_macro3
             // 
             this.btn_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_macro3.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_macro3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_macro3.ForeColor = System.Drawing.Color.White;
             this.btn_macro3.Location = new System.Drawing.Point(174, 94);
             this.btn_macro3.Margin = new System.Windows.Forms.Padding(2);
@@ -733,11 +744,12 @@ namespace RPCS
             this.btn_macro3.TabIndex = 29;
             this.btn_macro3.Text = "Macro 3";
             this.btn_macro3.UseVisualStyleBackColor = false;
+            this.btn_macro3.Click += new System.EventHandler(this.btn_macro3_Click);
             // 
             // btn_macro2
             // 
             this.btn_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_macro2.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_macro2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_macro2.ForeColor = System.Drawing.Color.White;
             this.btn_macro2.Location = new System.Drawing.Point(84, 94);
             this.btn_macro2.Margin = new System.Windows.Forms.Padding(2);
@@ -746,6 +758,7 @@ namespace RPCS
             this.btn_macro2.TabIndex = 28;
             this.btn_macro2.Text = "Macro 2";
             this.btn_macro2.UseVisualStyleBackColor = false;
+            this.btn_macro2.Click += new System.EventHandler(this.btn_macro2_Click);
             // 
             // tb_setR
             // 
@@ -804,7 +817,7 @@ namespace RPCS
             // btn_macro1
             // 
             this.btn_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_macro1.Font = Pretendard_Regular_12;
+            this.btn_macro1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_macro1.ForeColor = System.Drawing.Color.White;
             this.btn_macro1.Location = new System.Drawing.Point(0, 94);
             this.btn_macro1.Margin = new System.Windows.Forms.Padding(2);
@@ -813,6 +826,7 @@ namespace RPCS
             this.btn_macro1.TabIndex = 21;
             this.btn_macro1.Text = "Macro 1";
             this.btn_macro1.UseVisualStyleBackColor = false;
+            this.btn_macro1.Click += new System.EventHandler(this.btn_macro1_Click);
             // 
             // pictureBox4
             // 
@@ -898,9 +912,10 @@ namespace RPCS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 12);
+            this.label3.Size = new System.Drawing.Size(166, 30);
             this.label3.TabIndex = 4;
             this.label3.Text = "Target Position";
             // 
@@ -908,19 +923,19 @@ namespace RPCS
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label71);
-            this.panel1.Controls.Add(this.label70);
-            this.panel1.Controls.Add(this.label69);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label68);
-            this.panel1.Controls.Add(this.label67);
-            this.panel1.Controls.Add(this.label46);
-            this.panel1.Controls.Add(this.label66);
+            this.panel1.Controls.Add(this.label37);
+            this.panel1.Controls.Add(this.label38);
+            this.panel1.Controls.Add(this.label39);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label41);
             this.panel1.Controls.Add(this.label42);
             this.panel1.Controls.Add(this.label43);
             this.panel1.Controls.Add(this.label44);
             this.panel1.Controls.Add(this.label45);
+            this.panel1.Controls.Add(this.label46);
+            this.panel1.Controls.Add(this.label47);
+            this.panel1.Controls.Add(this.label48);
+            this.panel1.Controls.Add(this.label49);
             this.panel1.Controls.Add(this.label40);
             this.panel1.Controls.Add(this.tb_r);
             this.panel1.Controls.Add(this.tb_p);
@@ -942,189 +957,50 @@ namespace RPCS
             this.panel1.Size = new System.Drawing.Size(422, 133);
             this.panel1.TabIndex = 6;
             // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = Pretendard_Regular_12;
-            this.label71.Location = new System.Drawing.Point(382, 100);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(29, 19);
-            this.label71.TabIndex = 61;
-            this.label71.Text = "00";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = Pretendard_Regular_12;
-            this.label70.Location = new System.Drawing.Point(343, 101);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(29, 19);
-            this.label70.TabIndex = 60;
-            this.label70.Text = "00";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = Pretendard_Regular_12;
-            this.label69.Location = new System.Drawing.Point(304, 101);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(29, 19);
-            this.label69.TabIndex = 59;
-            this.label69.Text = "00";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(279, 101);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(10, 20);
-            this.pictureBox6.TabIndex = 55;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = Pretendard_Regular_12;
-            this.label68.Location = new System.Drawing.Point(248, 101);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(29, 19);
-            this.label68.TabIndex = 58;
-            this.label68.Text = "00";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = Pretendard_Regular_12;
-            this.label67.Location = new System.Drawing.Point(208, 101);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(29, 19);
-            this.label67.TabIndex = 57;
-            this.label67.Text = "00";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = Pretendard_Regular_12;
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label46.Location = new System.Drawing.Point(152, 101);
-            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(19, 19);
-            this.label46.TabIndex = 49;
-            this.label46.Text = "X";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = Pretendard_Regular_12;
-            this.label66.Location = new System.Drawing.Point(168, 101);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(29, 19);
-            this.label66.TabIndex = 56;
-            this.label66.Text = "00";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = Pretendard_Regular_12;
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label41.Location = new System.Drawing.Point(329, 100);
-            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(19, 19);
-            this.label41.TabIndex = 54;
-            this.label41.Text = "P";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = Pretendard_Regular_12;
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label42.Location = new System.Drawing.Point(368, 100);
-            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(19, 19);
-            this.label42.TabIndex = 53;
-            this.label42.Text = "R";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = Pretendard_Regular_12;
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label43.Location = new System.Drawing.Point(286, 101);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(24, 19);
-            this.label43.TabIndex = 52;
-            this.label43.Text = "W";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = Pretendard_Regular_12;
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label44.Location = new System.Drawing.Point(232, 101);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(19, 19);
-            this.label44.TabIndex = 51;
-            this.label44.Text = "Z";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = Pretendard_Regular_12;
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label45.Location = new System.Drawing.Point(192, 101);
-            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(19, 19);
-            this.label45.TabIndex = 50;
-            this.label45.Text = "Y";
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label40.Location = new System.Drawing.Point(5, 97);
+            this.label40.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label40.Location = new System.Drawing.Point(12, 67);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(136, 23);
+            this.label40.Size = new System.Drawing.Size(157, 30);
             this.label40.TabIndex = 48;
             this.label40.Text = "Current Origin";
             // 
             // tb_r
             // 
             this.tb_r.AutoSize = true;
-            this.tb_r.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_r.Location = new System.Drawing.Point(364, 51);
+            this.tb_r.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_r.Location = new System.Drawing.Point(366, 37);
             this.tb_r.Name = "tb_r";
-            this.tb_r.Size = new System.Drawing.Size(41, 29);
+            this.tb_r.Size = new System.Drawing.Size(37, 30);
             this.tb_r.TabIndex = 47;
             this.tb_r.Text = "00";
             // 
             // tb_p
             // 
             this.tb_p.AutoSize = true;
-            this.tb_p.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_p.Location = new System.Drawing.Point(302, 51);
+            this.tb_p.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_p.Location = new System.Drawing.Point(304, 37);
             this.tb_p.Name = "tb_p";
-            this.tb_p.Size = new System.Drawing.Size(41, 29);
+            this.tb_p.Size = new System.Drawing.Size(37, 30);
             this.tb_p.TabIndex = 46;
             this.tb_p.Text = "00";
             // 
             // tb_w
             // 
             this.tb_w.AutoSize = true;
-            this.tb_w.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_w.Location = new System.Drawing.Point(246, 51);
+            this.tb_w.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_w.Location = new System.Drawing.Point(248, 37);
             this.tb_w.Name = "tb_w";
-            this.tb_w.Size = new System.Drawing.Size(41, 29);
+            this.tb_w.Size = new System.Drawing.Size(37, 30);
             this.tb_w.TabIndex = 45;
             this.tb_w.Text = "00";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(205, 50);
+            this.pictureBox5.Image = global::RPCS.Properties.Resources.Line;
+            this.pictureBox5.Location = new System.Drawing.Point(207, 37);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(3, 31);
             this.pictureBox5.TabIndex = 41;
@@ -1133,111 +1009,112 @@ namespace RPCS
             // tb_zpos
             // 
             this.tb_zpos.AutoSize = true;
-            this.tb_zpos.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_zpos.Location = new System.Drawing.Point(166, 51);
+            this.tb_zpos.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_zpos.Location = new System.Drawing.Point(168, 37);
             this.tb_zpos.Name = "tb_zpos";
-            this.tb_zpos.Size = new System.Drawing.Size(41, 29);
+            this.tb_zpos.Size = new System.Drawing.Size(37, 30);
             this.tb_zpos.TabIndex = 44;
             this.tb_zpos.Text = "00";
             // 
             // tb_xpos
             // 
             this.tb_xpos.AutoSize = true;
-            this.tb_xpos.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_xpos.Location = new System.Drawing.Point(41, 51);
+            this.tb_xpos.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_xpos.Location = new System.Drawing.Point(43, 37);
             this.tb_xpos.Name = "tb_xpos";
-            this.tb_xpos.Size = new System.Drawing.Size(41, 29);
+            this.tb_xpos.Size = new System.Drawing.Size(37, 30);
             this.tb_xpos.TabIndex = 42;
             this.tb_xpos.Text = "00";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label24.Location = new System.Drawing.Point(279, 50);
+            this.label24.Location = new System.Drawing.Point(281, 36);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(32, 31);
+            this.label24.Size = new System.Drawing.Size(25, 30);
             this.label24.TabIndex = 40;
             this.label24.Text = "P";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label26.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label26.Location = new System.Drawing.Point(337, 50);
+            this.label26.Location = new System.Drawing.Point(339, 36);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(34, 31);
+            this.label26.Size = new System.Drawing.Size(26, 30);
             this.label26.TabIndex = 39;
             this.label26.Text = "R";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label27.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label27.Location = new System.Drawing.Point(213, 50);
+            this.label27.Location = new System.Drawing.Point(215, 36);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(39, 31);
+            this.label27.Size = new System.Drawing.Size(33, 30);
             this.label27.TabIndex = 38;
             this.label27.Text = "W";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label29.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label29.Location = new System.Drawing.Point(140, 50);
+            this.label29.Location = new System.Drawing.Point(142, 36);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(31, 31);
+            this.label29.Size = new System.Drawing.Size(25, 30);
             this.label29.TabIndex = 37;
             this.label29.Text = "Z";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label25.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label25.Location = new System.Drawing.Point(78, 50);
+            this.label25.Location = new System.Drawing.Point(80, 36);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(32, 31);
+            this.label25.Size = new System.Drawing.Size(25, 30);
             this.label25.TabIndex = 36;
             this.label25.Text = "Y";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label28.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label28.Location = new System.Drawing.Point(16, 50);
+            this.label28.Location = new System.Drawing.Point(18, 36);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 31);
+            this.label28.Size = new System.Drawing.Size(26, 30);
             this.label28.TabIndex = 35;
             this.label28.Text = "X";
             // 
             // tb_ypos
             // 
             this.tb_ypos.AutoSize = true;
-            this.tb_ypos.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_ypos.Location = new System.Drawing.Point(104, 51);
+            this.tb_ypos.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_ypos.Location = new System.Drawing.Point(106, 37);
             this.tb_ypos.Name = "tb_ypos";
-            this.tb_ypos.Size = new System.Drawing.Size(41, 29);
+            this.tb_ypos.Size = new System.Drawing.Size(37, 30);
             this.tb_ypos.TabIndex = 43;
             this.tb_ypos.Text = "00";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 12);
+            this.label5.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 7);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 12);
+            this.label5.Size = new System.Drawing.Size(163, 30);
             this.label5.TabIndex = 5;
             this.label5.Text = "World Position";
             // 
@@ -1381,12 +1258,12 @@ namespace RPCS
             // btn_initOrigin
             // 
             this.btn_initOrigin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_initOrigin.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_initOrigin.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_initOrigin.ForeColor = System.Drawing.Color.White;
-            this.btn_initOrigin.Location = new System.Drawing.Point(313, 93);
+            this.btn_initOrigin.Location = new System.Drawing.Point(297, 93);
             this.btn_initOrigin.Margin = new System.Windows.Forms.Padding(2);
             this.btn_initOrigin.Name = "btn_initOrigin";
-            this.btn_initOrigin.Size = new System.Drawing.Size(105, 35);
+            this.btn_initOrigin.Size = new System.Drawing.Size(121, 35);
             this.btn_initOrigin.TabIndex = 8;
             this.btn_initOrigin.Text = "Init Origin";
             this.btn_initOrigin.UseVisualStyleBackColor = false;
@@ -1394,9 +1271,10 @@ namespace RPCS
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 12);
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 12);
+            this.label4.Size = new System.Drawing.Size(147, 30);
             this.label4.TabIndex = 7;
             this.label4.Text = "User Position";
             // 
@@ -1427,12 +1305,12 @@ namespace RPCS
             // btn_setOrigin
             // 
             this.btn_setOrigin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_setOrigin.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_setOrigin.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_setOrigin.ForeColor = System.Drawing.Color.White;
-            this.btn_setOrigin.Location = new System.Drawing.Point(204, 93);
+            this.btn_setOrigin.Location = new System.Drawing.Point(179, 93);
             this.btn_setOrigin.Margin = new System.Windows.Forms.Padding(2);
             this.btn_setOrigin.Name = "btn_setOrigin";
-            this.btn_setOrigin.Size = new System.Drawing.Size(105, 35);
+            this.btn_setOrigin.Size = new System.Drawing.Size(114, 35);
             this.btn_setOrigin.TabIndex = 3;
             this.btn_setOrigin.Text = "Set Origin";
             this.btn_setOrigin.UseVisualStyleBackColor = false;
@@ -1462,14 +1340,14 @@ namespace RPCS
             this.lv_pos.AllowUserToAddRows = false;
             this.lv_pos.AllowUserToDeleteRows = false;
             this.lv_pos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.lv_pos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.lv_pos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.lv_pos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.lv_pos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.column_state,
@@ -1487,8 +1365,8 @@ namespace RPCS
             this.lv_pos.Location = new System.Drawing.Point(17, 46);
             this.lv_pos.Name = "lv_pos";
             this.lv_pos.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Pretendard SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lv_pos.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Pretendard SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lv_pos.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.lv_pos.RowTemplate.Height = 23;
             this.lv_pos.Size = new System.Drawing.Size(830, 375);
             this.lv_pos.TabIndex = 43;
@@ -1652,20 +1530,20 @@ namespace RPCS
             // 
             this.R4VAL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
             this.R4VAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.R4VAL.Location = new System.Drawing.Point(591, 64);
+            this.R4VAL.Location = new System.Drawing.Point(591, 62);
             this.R4VAL.Name = "R4VAL";
-            this.R4VAL.Size = new System.Drawing.Size(43, 31);
+            this.R4VAL.Size = new System.Drawing.Size(59, 31);
             this.R4VAL.TabIndex = 41;
             // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label73.Location = new System.Drawing.Point(552, 67);
+            this.label73.Location = new System.Drawing.Point(548, 62);
             this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(38, 25);
+            this.label73.Size = new System.Drawing.Size(38, 30);
             this.label73.TabIndex = 40;
             this.label73.Text = "R4";
             // 
@@ -1673,20 +1551,20 @@ namespace RPCS
             // 
             this.R3VAL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
             this.R3VAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.R3VAL.Location = new System.Drawing.Point(484, 64);
+            this.R3VAL.Location = new System.Drawing.Point(481, 62);
             this.R3VAL.Name = "R3VAL";
-            this.R3VAL.Size = new System.Drawing.Size(43, 31);
+            this.R3VAL.Size = new System.Drawing.Size(59, 31);
             this.R3VAL.TabIndex = 39;
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label72.Location = new System.Drawing.Point(445, 67);
+            this.label72.Location = new System.Drawing.Point(438, 62);
             this.label72.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(38, 25);
+            this.label72.Size = new System.Drawing.Size(38, 30);
             this.label72.TabIndex = 38;
             this.label72.Text = "R3";
             // 
@@ -1703,29 +1581,29 @@ namespace RPCS
             // fixedSpeed
             // 
             this.fixedSpeed.AutoSize = true;
-            this.fixedSpeed.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.fixedSpeed.Location = new System.Drawing.Point(552, 14);
+            this.fixedSpeed.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.fixedSpeed.Location = new System.Drawing.Point(545, 8);
             this.fixedSpeed.Name = "fixedSpeed";
-            this.fixedSpeed.Size = new System.Drawing.Size(38, 25);
+            this.fixedSpeed.Size = new System.Drawing.Size(37, 30);
             this.fixedSpeed.TabIndex = 36;
             this.fixedSpeed.Text = "00";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label56.Location = new System.Drawing.Point(714, 14);
+            this.label56.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label56.Location = new System.Drawing.Point(707, 8);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(120, 25);
+            this.label56.Size = new System.Drawing.Size(123, 30);
             this.label56.TabIndex = 35;
             this.label56.Text = "00 : 00 : 00";
             // 
             // cmdStop
             // 
             this.cmdStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.cmdStop.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmdStop.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmdStop.ForeColor = System.Drawing.Color.White;
-            this.cmdStop.Location = new System.Drawing.Point(763, 65);
+            this.cmdStop.Location = new System.Drawing.Point(761, 64);
             this.cmdStop.Margin = new System.Windows.Forms.Padding(2);
             this.cmdStop.Name = "cmdStop";
             this.cmdStop.Size = new System.Drawing.Size(77, 35);
@@ -1736,9 +1614,9 @@ namespace RPCS
             // cmdRun
             // 
             this.cmdRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.cmdRun.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmdRun.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmdRun.ForeColor = System.Drawing.Color.White;
-            this.cmdRun.Location = new System.Drawing.Point(671, 65);
+            this.cmdRun.Location = new System.Drawing.Point(669, 64);
             this.cmdRun.Margin = new System.Windows.Forms.Padding(2);
             this.cmdRun.Name = "cmdRun";
             this.cmdRun.Size = new System.Drawing.Size(86, 35);
@@ -1749,31 +1627,31 @@ namespace RPCS
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label33.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label33.Location = new System.Drawing.Point(608, 12);
+            this.label33.Location = new System.Drawing.Point(601, 6);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(101, 25);
+            this.label33.Size = new System.Drawing.Size(103, 30);
             this.label33.TabIndex = 19;
             this.label33.Text = "Runtime :";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label32.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label32.Location = new System.Drawing.Point(378, 12);
+            this.label32.Location = new System.Drawing.Point(371, 6);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(169, 25);
+            this.label32.Size = new System.Drawing.Size(170, 30);
             this.label32.TabIndex = 18;
             this.label32.Text = "Feed(mm / sec) :";
             // 
             // btn_load
             // 
             this.btn_load.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_load.Font = new System.Drawing.Font("Pretendard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_load.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_load.ForeColor = System.Drawing.Color.White;
             this.btn_load.Location = new System.Drawing.Point(10, 65);
             this.btn_load.Margin = new System.Windows.Forms.Padding(2);
@@ -1787,25 +1665,27 @@ namespace RPCS
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(12, 12);
+            this.label31.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(12, 7);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(87, 12);
+            this.label31.Size = new System.Drawing.Size(153, 30);
             this.label31.TabIndex = 5;
             this.label31.Text = "Task Manager";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 12);
+            this.label7.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 12);
+            this.label7.Size = new System.Drawing.Size(183, 30);
             this.label7.TabIndex = 8;
             this.label7.Text = "Batch Processing";
             // 
             // batch_log
             // 
             this.batch_log.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.batch_log.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.batch_log.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.batch_log.Location = new System.Drawing.Point(10, 41);
             this.batch_log.Margin = new System.Windows.Forms.Padding(2);
             this.batch_log.Multiline = true;
@@ -1818,7 +1698,7 @@ namespace RPCS
             // movement_log
             // 
             this.movement_log.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.movement_log.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.movement_log.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.movement_log.Location = new System.Drawing.Point(10, 41);
             this.movement_log.Margin = new System.Windows.Forms.Padding(2);
             this.movement_log.Multiline = true;
@@ -1860,6 +1740,7 @@ namespace RPCS
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.btn_saveBatch);
             this.panel3.Controls.Add(this.label35);
             this.panel3.Controls.Add(this.movement_log);
             this.panel3.Location = new System.Drawing.Point(972, 712);
@@ -1868,12 +1749,26 @@ namespace RPCS
             this.panel3.Size = new System.Drawing.Size(422, 296);
             this.panel3.TabIndex = 14;
             // 
+            // btn_saveBatch
+            // 
+            this.btn_saveBatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
+            this.btn_saveBatch.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_saveBatch.ForeColor = System.Drawing.Color.White;
+            this.btn_saveBatch.Location = new System.Drawing.Point(292, 2);
+            this.btn_saveBatch.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_saveBatch.Name = "btn_saveBatch";
+            this.btn_saveBatch.Size = new System.Drawing.Size(118, 35);
+            this.btn_saveBatch.TabIndex = 34;
+            this.btn_saveBatch.Text = "Save Batch";
+            this.btn_saveBatch.UseVisualStyleBackColor = false;
+            // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(12, 12);
+            this.label35.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(12, 7);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(125, 12);
+            this.label35.Size = new System.Drawing.Size(233, 30);
             this.label35.TabIndex = 5;
             this.label35.Text = "Robot Movement Log";
             // 
@@ -1892,11 +1787,153 @@ namespace RPCS
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(12, 12);
+            this.label36.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(12, 7);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(130, 12);
+            this.label36.Size = new System.Drawing.Size(235, 30);
             this.label36.TabIndex = 5;
             this.label36.Text = "Batch Completion Log";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label37.Location = new System.Drawing.Point(366, 98);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(37, 30);
+            this.label37.TabIndex = 61;
+            this.label37.Text = "00";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label38.Location = new System.Drawing.Point(304, 98);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(37, 30);
+            this.label38.TabIndex = 60;
+            this.label38.Text = "00";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label39.Location = new System.Drawing.Point(248, 98);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(37, 30);
+            this.label39.TabIndex = 59;
+            this.label39.Text = "00";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RPCS.Properties.Resources.Line;
+            this.pictureBox1.Location = new System.Drawing.Point(207, 98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(3, 31);
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label41.Location = new System.Drawing.Point(168, 98);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(37, 30);
+            this.label41.TabIndex = 58;
+            this.label41.Text = "00";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label42.Location = new System.Drawing.Point(43, 98);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(37, 30);
+            this.label42.TabIndex = 56;
+            this.label42.Text = "00";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label43.Location = new System.Drawing.Point(281, 97);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(25, 30);
+            this.label43.TabIndex = 54;
+            this.label43.Text = "P";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label44.Location = new System.Drawing.Point(339, 97);
+            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(26, 30);
+            this.label44.TabIndex = 53;
+            this.label44.Text = "R";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label45.Location = new System.Drawing.Point(215, 97);
+            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(33, 30);
+            this.label45.TabIndex = 52;
+            this.label45.Text = "W";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label46.Location = new System.Drawing.Point(142, 97);
+            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(25, 30);
+            this.label46.TabIndex = 51;
+            this.label46.Text = "Z";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label47.Location = new System.Drawing.Point(80, 97);
+            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(25, 30);
+            this.label47.TabIndex = 50;
+            this.label47.Text = "Y";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label48.Location = new System.Drawing.Point(18, 97);
+            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(26, 30);
+            this.label48.TabIndex = 49;
+            this.label48.Text = "X";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label49.Location = new System.Drawing.Point(106, 98);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(37, 30);
+            this.label49.TabIndex = 57;
+            this.label49.Text = "00";
             // 
             // mainForm_RPCS
             // 
@@ -1943,7 +1980,6 @@ namespace RPCS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.user_position.ResumeLayout(false);
             this.user_position.PerformLayout();
@@ -1958,6 +1994,7 @@ namespace RPCS
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2059,19 +2096,6 @@ namespace RPCS
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label tb_ypos;
         private System.Windows.Forms.Button btn_editMacro;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label65;
@@ -2113,6 +2137,20 @@ namespace RPCS
         private DataGridViewTextBoxColumn column_r;
         private DataGridViewTextBoxColumn column_m;
         private DataGridViewTextBoxColumn column_n;
+        private Button btn_saveBatch;
+        private Label label37;
+        private Label label38;
+        private Label label39;
+        private PictureBox pictureBox1;
+        private Label label41;
+        private Label label42;
+        private Label label43;
+        private Label label44;
+        private Label label45;
+        private Label label46;
+        private Label label47;
+        private Label label48;
+        private Label label49;
     }
 }
 

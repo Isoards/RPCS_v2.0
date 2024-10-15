@@ -30,72 +30,72 @@
         {
             this.tb_setX_macro1 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_exit1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tab_macro1 = new System.Windows.Forms.TabPage();
             this.btn_save1 = new System.Windows.Forms.Button();
             this.tb_macro1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_setR_macro1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_setP_macro1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_setW_macro1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_setZ_macro1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_setY_macro1 = new System.Windows.Forms.TextBox();
             this.tab_macro2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_save2 = new System.Windows.Forms.Button();
+            this.tb_macro2 = new System.Windows.Forms.TextBox();
+            this.btn_exit2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tb_setR_macro2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tb_setP_macro2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tb_setW_macro2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tb_setZ_macro2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tb_setX_macro2 = new System.Windows.Forms.TextBox();
+            this.tb_setY_macro2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tab_macro3 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_save3 = new System.Windows.Forms.Button();
+            this.tb_macro3 = new System.Windows.Forms.TextBox();
+            this.btn_exit3 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tb_setR_macro3 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tb_setP_macro3 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tb_setW_macro3 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.tb_setZ_macro3 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.tb_setX_macro3 = new System.Windows.Forms.TextBox();
+            this.tb_setY_macro3 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.tab_macro4 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_save4 = new System.Windows.Forms.Button();
+            this.tb_macro4 = new System.Windows.Forms.TextBox();
+            this.btn_exit4 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.tb_setR_macro4 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.tb_setP_macro4 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.tb_setW_macro4 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.tb_setZ_macro4 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.tb_setX_macro4 = new System.Windows.Forms.TextBox();
+            this.tb_setY_macro4 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tab_macro1.SuspendLayout();
@@ -108,7 +108,7 @@
             // 
             this.tb_setX_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
             this.tb_setX_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_setX_macro1.Location = new System.Drawing.Point(125, 74);
+            this.tb_setX_macro1.Location = new System.Drawing.Point(125, 72);
             this.tb_setX_macro1.Name = "tb_setX_macro1";
             this.tb_setX_macro1.Size = new System.Drawing.Size(57, 33);
             this.tb_setX_macro1.TabIndex = 34;
@@ -119,7 +119,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label23.Location = new System.Drawing.Point(89, 74);
+            this.label23.Location = new System.Drawing.Point(89, 72);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(31, 32);
@@ -127,19 +127,19 @@
             this.label23.Text = "X";
             this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
-            // btn_exit
+            // btn_exit1
             // 
-            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_exit.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(312, 241);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(106, 43);
-            this.btn_exit.TabIndex = 60;
-            this.btn_exit.Text = "EXIT";
-            this.btn_exit.UseVisualStyleBackColor = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_exit1.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_exit1.ForeColor = System.Drawing.Color.White;
+            this.btn_exit1.Location = new System.Drawing.Point(304, 241);
+            this.btn_exit1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_exit1.Name = "btn_exit1";
+            this.btn_exit1.Size = new System.Drawing.Size(114, 50);
+            this.btn_exit1.TabIndex = 60;
+            this.btn_exit1.Text = "EXIT";
+            this.btn_exit1.UseVisualStyleBackColor = false;
+            this.btn_exit1.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // tabControl1
             // 
@@ -161,19 +161,19 @@
             this.tab_macro1.BackColor = System.Drawing.Color.White;
             this.tab_macro1.Controls.Add(this.btn_save1);
             this.tab_macro1.Controls.Add(this.tb_macro1);
-            this.tab_macro1.Controls.Add(this.btn_exit);
+            this.tab_macro1.Controls.Add(this.btn_exit1);
             this.tab_macro1.Controls.Add(this.label6);
-            this.tab_macro1.Controls.Add(this.textBox5);
+            this.tab_macro1.Controls.Add(this.tb_setR_macro1);
             this.tab_macro1.Controls.Add(this.label5);
-            this.tab_macro1.Controls.Add(this.textBox4);
+            this.tab_macro1.Controls.Add(this.tb_setP_macro1);
             this.tab_macro1.Controls.Add(this.label4);
-            this.tab_macro1.Controls.Add(this.textBox3);
+            this.tab_macro1.Controls.Add(this.tb_setW_macro1);
             this.tab_macro1.Controls.Add(this.label3);
-            this.tab_macro1.Controls.Add(this.textBox2);
+            this.tab_macro1.Controls.Add(this.tb_setZ_macro1);
             this.tab_macro1.Controls.Add(this.label2);
             this.tab_macro1.Controls.Add(this.label1);
             this.tab_macro1.Controls.Add(this.tb_setX_macro1);
-            this.tab_macro1.Controls.Add(this.textBox1);
+            this.tab_macro1.Controls.Add(this.tb_setY_macro1);
             this.tab_macro1.Controls.Add(this.label23);
             this.tab_macro1.Location = new System.Drawing.Point(4, 37);
             this.tab_macro1.Name = "tab_macro1";
@@ -185,21 +185,22 @@
             // btn_save1
             // 
             this.btn_save1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.btn_save1.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save1.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_save1.ForeColor = System.Drawing.Color.White;
             this.btn_save1.Location = new System.Drawing.Point(5, 241);
             this.btn_save1.Margin = new System.Windows.Forms.Padding(2);
             this.btn_save1.Name = "btn_save1";
-            this.btn_save1.Size = new System.Drawing.Size(114, 43);
+            this.btn_save1.Size = new System.Drawing.Size(114, 50);
             this.btn_save1.TabIndex = 74;
             this.btn_save1.Text = "SAVE";
             this.btn_save1.UseVisualStyleBackColor = false;
+            this.btn_save1.Click += new System.EventHandler(this.btn_save1_Click);
             // 
             // tb_macro1
             // 
             this.tb_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
             this.tb_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_macro1.Location = new System.Drawing.Point(231, 17);
+            this.tb_macro1.Location = new System.Drawing.Point(231, 15);
             this.tb_macro1.Name = "tb_macro1";
             this.tb_macro1.Size = new System.Drawing.Size(136, 33);
             this.tb_macro1.TabIndex = 73;
@@ -210,91 +211,91 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(59, 18);
+            this.label6.Location = new System.Drawing.Point(40, 16);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(167, 32);
+            this.label6.Size = new System.Drawing.Size(179, 32);
             this.label6.TabIndex = 72;
-            this.label6.Text = "Macro Name";
+            this.label6.Text = "Macro1 Name";
             // 
-            // textBox5
+            // tb_setR_macro1
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox5.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox5.Location = new System.Drawing.Point(265, 205);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(57, 33);
-            this.textBox5.TabIndex = 71;
+            this.tb_setR_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setR_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setR_macro1.Location = new System.Drawing.Point(265, 203);
+            this.tb_setR_macro1.Name = "tb_setR_macro1";
+            this.tb_setR_macro1.Size = new System.Drawing.Size(57, 33);
+            this.tb_setR_macro1.TabIndex = 71;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(221, 205);
+            this.label5.Location = new System.Drawing.Point(221, 203);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 32);
             this.label5.TabIndex = 70;
             this.label5.Text = "R";
             // 
-            // textBox4
+            // tb_setP_macro1
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.Location = new System.Drawing.Point(265, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(57, 33);
-            this.textBox4.TabIndex = 69;
+            this.tb_setP_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setP_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setP_macro1.Location = new System.Drawing.Point(265, 136);
+            this.tb_setP_macro1.Name = "tb_setP_macro1";
+            this.tb_setP_macro1.Size = new System.Drawing.Size(57, 33);
+            this.tb_setP_macro1.TabIndex = 69;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(221, 138);
+            this.label4.Location = new System.Drawing.Point(221, 136);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 32);
             this.label4.TabIndex = 68;
             this.label4.Text = "P";
             // 
-            // textBox3
+            // tb_setW_macro1
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.Location = new System.Drawing.Point(265, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(57, 33);
-            this.textBox3.TabIndex = 67;
+            this.tb_setW_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setW_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setW_macro1.Location = new System.Drawing.Point(265, 73);
+            this.tb_setW_macro1.Name = "tb_setW_macro1";
+            this.tb_setW_macro1.Size = new System.Drawing.Size(57, 33);
+            this.tb_setW_macro1.TabIndex = 67;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(221, 76);
+            this.label3.Location = new System.Drawing.Point(221, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 32);
             this.label3.TabIndex = 66;
             this.label3.Text = "W";
             // 
-            // textBox2
+            // tb_setZ_macro1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.Location = new System.Drawing.Point(124, 202);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(57, 33);
-            this.textBox2.TabIndex = 65;
+            this.tb_setZ_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setZ_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setZ_macro1.Location = new System.Drawing.Point(124, 200);
+            this.tb_setZ_macro1.Name = "tb_setZ_macro1";
+            this.tb_setZ_macro1.Size = new System.Drawing.Size(57, 33);
+            this.tb_setZ_macro1.TabIndex = 65;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(89, 203);
+            this.label2.Location = new System.Drawing.Point(89, 201);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 32);
@@ -306,40 +307,40 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(89, 136);
+            this.label1.Location = new System.Drawing.Point(89, 134);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 32);
             this.label1.TabIndex = 63;
             this.label1.Text = "Y";
             // 
-            // textBox1
+            // tb_setY_macro1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(125, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(57, 33);
-            this.textBox1.TabIndex = 62;
+            this.tb_setY_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setY_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setY_macro1.Location = new System.Drawing.Point(125, 133);
+            this.tb_setY_macro1.Name = "tb_setY_macro1";
+            this.tb_setY_macro1.Size = new System.Drawing.Size(57, 33);
+            this.tb_setY_macro1.TabIndex = 62;
             // 
             // tab_macro2
             // 
             this.tab_macro2.BackColor = System.Drawing.Color.White;
-            this.tab_macro2.Controls.Add(this.button1);
-            this.tab_macro2.Controls.Add(this.textBox6);
-            this.tab_macro2.Controls.Add(this.button2);
+            this.tab_macro2.Controls.Add(this.btn_save2);
+            this.tab_macro2.Controls.Add(this.tb_macro2);
+            this.tab_macro2.Controls.Add(this.btn_exit2);
             this.tab_macro2.Controls.Add(this.label7);
-            this.tab_macro2.Controls.Add(this.textBox7);
+            this.tab_macro2.Controls.Add(this.tb_setR_macro2);
             this.tab_macro2.Controls.Add(this.label8);
-            this.tab_macro2.Controls.Add(this.textBox8);
+            this.tab_macro2.Controls.Add(this.tb_setP_macro2);
             this.tab_macro2.Controls.Add(this.label9);
-            this.tab_macro2.Controls.Add(this.textBox9);
+            this.tab_macro2.Controls.Add(this.tb_setW_macro2);
             this.tab_macro2.Controls.Add(this.label10);
-            this.tab_macro2.Controls.Add(this.textBox10);
+            this.tab_macro2.Controls.Add(this.tb_setZ_macro2);
             this.tab_macro2.Controls.Add(this.label11);
             this.tab_macro2.Controls.Add(this.label12);
-            this.tab_macro2.Controls.Add(this.textBox11);
-            this.tab_macro2.Controls.Add(this.textBox12);
+            this.tab_macro2.Controls.Add(this.tb_setX_macro2);
+            this.tab_macro2.Controls.Add(this.tb_setY_macro2);
             this.tab_macro2.Controls.Add(this.label13);
             this.tab_macro2.Location = new System.Drawing.Point(4, 37);
             this.tab_macro2.Name = "tab_macro2";
@@ -348,61 +349,63 @@
             this.tab_macro2.TabIndex = 1;
             this.tab_macro2.Text = "Macro 2";
             // 
-            // button1
+            // btn_save2
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button1.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(5, 239);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 43);
-            this.button1.TabIndex = 90;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_save2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
+            this.btn_save2.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_save2.ForeColor = System.Drawing.Color.White;
+            this.btn_save2.Location = new System.Drawing.Point(5, 241);
+            this.btn_save2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_save2.Name = "btn_save2";
+            this.btn_save2.Size = new System.Drawing.Size(114, 50);
+            this.btn_save2.TabIndex = 90;
+            this.btn_save2.Text = "SAVE";
+            this.btn_save2.UseVisualStyleBackColor = false;
+            this.btn_save2.Click += new System.EventHandler(this.btn_save2_Click);
             // 
-            // textBox6
+            // tb_macro2
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox6.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox6.Location = new System.Drawing.Point(231, 15);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(136, 33);
-            this.textBox6.TabIndex = 89;
+            this.tb_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_macro2.Location = new System.Drawing.Point(231, 15);
+            this.tb_macro2.Name = "tb_macro2";
+            this.tb_macro2.Size = new System.Drawing.Size(136, 33);
+            this.tb_macro2.TabIndex = 89;
             // 
-            // button2
+            // btn_exit2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(332, 239);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 43);
-            this.button2.TabIndex = 77;
-            this.button2.Text = "EXIT";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_exit2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_exit2.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_exit2.ForeColor = System.Drawing.Color.White;
+            this.btn_exit2.Location = new System.Drawing.Point(304, 241);
+            this.btn_exit2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_exit2.Name = "btn_exit2";
+            this.btn_exit2.Size = new System.Drawing.Size(114, 50);
+            this.btn_exit2.TabIndex = 77;
+            this.btn_exit2.Text = "EXIT";
+            this.btn_exit2.UseVisualStyleBackColor = false;
+            this.btn_exit2.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(59, 16);
+            this.label7.Location = new System.Drawing.Point(40, 16);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 32);
+            this.label7.Size = new System.Drawing.Size(190, 32);
             this.label7.TabIndex = 88;
-            this.label7.Text = "Macro Name";
+            this.label7.Text = "Macro 2 Name";
             // 
-            // textBox7
+            // tb_setR_macro2
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox7.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox7.Location = new System.Drawing.Point(265, 203);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(57, 33);
-            this.textBox7.TabIndex = 87;
+            this.tb_setR_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setR_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setR_macro2.Location = new System.Drawing.Point(265, 203);
+            this.tb_setR_macro2.Name = "tb_setR_macro2";
+            this.tb_setR_macro2.Size = new System.Drawing.Size(57, 33);
+            this.tb_setR_macro2.TabIndex = 87;
             // 
             // label8
             // 
@@ -416,14 +419,14 @@
             this.label8.TabIndex = 86;
             this.label8.Text = "R";
             // 
-            // textBox8
+            // tb_setP_macro2
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox8.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox8.Location = new System.Drawing.Point(265, 136);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(57, 33);
-            this.textBox8.TabIndex = 85;
+            this.tb_setP_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setP_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setP_macro2.Location = new System.Drawing.Point(265, 136);
+            this.tb_setP_macro2.Name = "tb_setP_macro2";
+            this.tb_setP_macro2.Size = new System.Drawing.Size(57, 33);
+            this.tb_setP_macro2.TabIndex = 85;
             // 
             // label9
             // 
@@ -437,14 +440,14 @@
             this.label9.TabIndex = 84;
             this.label9.Text = "P";
             // 
-            // textBox9
+            // tb_setW_macro2
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox9.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox9.Location = new System.Drawing.Point(265, 73);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(57, 33);
-            this.textBox9.TabIndex = 83;
+            this.tb_setW_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setW_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setW_macro2.Location = new System.Drawing.Point(265, 73);
+            this.tb_setW_macro2.Name = "tb_setW_macro2";
+            this.tb_setW_macro2.Size = new System.Drawing.Size(57, 33);
+            this.tb_setW_macro2.TabIndex = 83;
             // 
             // label10
             // 
@@ -458,14 +461,14 @@
             this.label10.TabIndex = 82;
             this.label10.Text = "W";
             // 
-            // textBox10
+            // tb_setZ_macro2
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox10.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox10.Location = new System.Drawing.Point(124, 200);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(57, 33);
-            this.textBox10.TabIndex = 81;
+            this.tb_setZ_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setZ_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setZ_macro2.Location = new System.Drawing.Point(124, 200);
+            this.tb_setZ_macro2.Name = "tb_setZ_macro2";
+            this.tb_setZ_macro2.Size = new System.Drawing.Size(57, 33);
+            this.tb_setZ_macro2.TabIndex = 81;
             // 
             // label11
             // 
@@ -491,23 +494,23 @@
             this.label12.TabIndex = 79;
             this.label12.Text = "Y";
             // 
-            // textBox11
+            // tb_setX_macro2
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox11.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox11.Location = new System.Drawing.Point(125, 72);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(57, 33);
-            this.textBox11.TabIndex = 76;
+            this.tb_setX_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setX_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setX_macro2.Location = new System.Drawing.Point(125, 72);
+            this.tb_setX_macro2.Name = "tb_setX_macro2";
+            this.tb_setX_macro2.Size = new System.Drawing.Size(57, 33);
+            this.tb_setX_macro2.TabIndex = 76;
             // 
-            // textBox12
+            // tb_setY_macro2
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox12.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox12.Location = new System.Drawing.Point(125, 133);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(57, 33);
-            this.textBox12.TabIndex = 78;
+            this.tb_setY_macro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setY_macro2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setY_macro2.Location = new System.Drawing.Point(125, 133);
+            this.tb_setY_macro2.Name = "tb_setY_macro2";
+            this.tb_setY_macro2.Size = new System.Drawing.Size(57, 33);
+            this.tb_setY_macro2.TabIndex = 78;
             // 
             // label13
             // 
@@ -524,21 +527,21 @@
             // tab_macro3
             // 
             this.tab_macro3.BackColor = System.Drawing.Color.White;
-            this.tab_macro3.Controls.Add(this.button3);
-            this.tab_macro3.Controls.Add(this.textBox13);
-            this.tab_macro3.Controls.Add(this.button4);
+            this.tab_macro3.Controls.Add(this.btn_save3);
+            this.tab_macro3.Controls.Add(this.tb_macro3);
+            this.tab_macro3.Controls.Add(this.btn_exit3);
             this.tab_macro3.Controls.Add(this.label14);
-            this.tab_macro3.Controls.Add(this.textBox14);
+            this.tab_macro3.Controls.Add(this.tb_setR_macro3);
             this.tab_macro3.Controls.Add(this.label15);
-            this.tab_macro3.Controls.Add(this.textBox15);
+            this.tab_macro3.Controls.Add(this.tb_setP_macro3);
             this.tab_macro3.Controls.Add(this.label16);
-            this.tab_macro3.Controls.Add(this.textBox16);
+            this.tab_macro3.Controls.Add(this.tb_setW_macro3);
             this.tab_macro3.Controls.Add(this.label17);
-            this.tab_macro3.Controls.Add(this.textBox17);
+            this.tab_macro3.Controls.Add(this.tb_setZ_macro3);
             this.tab_macro3.Controls.Add(this.label18);
             this.tab_macro3.Controls.Add(this.label19);
-            this.tab_macro3.Controls.Add(this.textBox18);
-            this.tab_macro3.Controls.Add(this.textBox19);
+            this.tab_macro3.Controls.Add(this.tb_setX_macro3);
+            this.tab_macro3.Controls.Add(this.tb_setY_macro3);
             this.tab_macro3.Controls.Add(this.label20);
             this.tab_macro3.Location = new System.Drawing.Point(4, 37);
             this.tab_macro3.Name = "tab_macro3";
@@ -547,61 +550,63 @@
             this.tab_macro3.TabIndex = 2;
             this.tab_macro3.Text = "Macro 3";
             // 
-            // button3
+            // btn_save3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button3.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(5, 239);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 43);
-            this.button3.TabIndex = 90;
-            this.button3.Text = "SAVE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_save3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
+            this.btn_save3.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_save3.ForeColor = System.Drawing.Color.White;
+            this.btn_save3.Location = new System.Drawing.Point(5, 241);
+            this.btn_save3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_save3.Name = "btn_save3";
+            this.btn_save3.Size = new System.Drawing.Size(114, 50);
+            this.btn_save3.TabIndex = 90;
+            this.btn_save3.Text = "SAVE";
+            this.btn_save3.UseVisualStyleBackColor = false;
+            this.btn_save3.Click += new System.EventHandler(this.btn_save3_Click);
             // 
-            // textBox13
+            // tb_macro3
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox13.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox13.Location = new System.Drawing.Point(231, 15);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(136, 33);
-            this.textBox13.TabIndex = 89;
+            this.tb_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_macro3.Location = new System.Drawing.Point(231, 15);
+            this.tb_macro3.Name = "tb_macro3";
+            this.tb_macro3.Size = new System.Drawing.Size(136, 33);
+            this.tb_macro3.TabIndex = 89;
             // 
-            // button4
+            // btn_exit3
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button4.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(332, 239);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 43);
-            this.button4.TabIndex = 77;
-            this.button4.Text = "EXIT";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_exit3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_exit3.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_exit3.ForeColor = System.Drawing.Color.White;
+            this.btn_exit3.Location = new System.Drawing.Point(304, 241);
+            this.btn_exit3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_exit3.Name = "btn_exit3";
+            this.btn_exit3.Size = new System.Drawing.Size(114, 50);
+            this.btn_exit3.TabIndex = 77;
+            this.btn_exit3.Text = "EXIT";
+            this.btn_exit3.UseVisualStyleBackColor = false;
+            this.btn_exit3.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label14.Location = new System.Drawing.Point(59, 16);
+            this.label14.Location = new System.Drawing.Point(40, 16);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(167, 32);
+            this.label14.Size = new System.Drawing.Size(191, 32);
             this.label14.TabIndex = 88;
-            this.label14.Text = "Macro Name";
+            this.label14.Text = "Macro 3 Name";
             // 
-            // textBox14
+            // tb_setR_macro3
             // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox14.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox14.Location = new System.Drawing.Point(265, 203);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(57, 33);
-            this.textBox14.TabIndex = 87;
+            this.tb_setR_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setR_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setR_macro3.Location = new System.Drawing.Point(265, 203);
+            this.tb_setR_macro3.Name = "tb_setR_macro3";
+            this.tb_setR_macro3.Size = new System.Drawing.Size(57, 33);
+            this.tb_setR_macro3.TabIndex = 87;
             // 
             // label15
             // 
@@ -615,14 +620,14 @@
             this.label15.TabIndex = 86;
             this.label15.Text = "R";
             // 
-            // textBox15
+            // tb_setP_macro3
             // 
-            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox15.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox15.Location = new System.Drawing.Point(265, 136);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(57, 33);
-            this.textBox15.TabIndex = 85;
+            this.tb_setP_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setP_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setP_macro3.Location = new System.Drawing.Point(265, 136);
+            this.tb_setP_macro3.Name = "tb_setP_macro3";
+            this.tb_setP_macro3.Size = new System.Drawing.Size(57, 33);
+            this.tb_setP_macro3.TabIndex = 85;
             // 
             // label16
             // 
@@ -636,14 +641,14 @@
             this.label16.TabIndex = 84;
             this.label16.Text = "P";
             // 
-            // textBox16
+            // tb_setW_macro3
             // 
-            this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox16.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox16.Location = new System.Drawing.Point(265, 73);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(57, 33);
-            this.textBox16.TabIndex = 83;
+            this.tb_setW_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setW_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setW_macro3.Location = new System.Drawing.Point(265, 73);
+            this.tb_setW_macro3.Name = "tb_setW_macro3";
+            this.tb_setW_macro3.Size = new System.Drawing.Size(57, 33);
+            this.tb_setW_macro3.TabIndex = 83;
             // 
             // label17
             // 
@@ -657,14 +662,14 @@
             this.label17.TabIndex = 82;
             this.label17.Text = "W";
             // 
-            // textBox17
+            // tb_setZ_macro3
             // 
-            this.textBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox17.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox17.Location = new System.Drawing.Point(124, 200);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(57, 33);
-            this.textBox17.TabIndex = 81;
+            this.tb_setZ_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setZ_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setZ_macro3.Location = new System.Drawing.Point(124, 200);
+            this.tb_setZ_macro3.Name = "tb_setZ_macro3";
+            this.tb_setZ_macro3.Size = new System.Drawing.Size(57, 33);
+            this.tb_setZ_macro3.TabIndex = 81;
             // 
             // label18
             // 
@@ -690,23 +695,23 @@
             this.label19.TabIndex = 79;
             this.label19.Text = "Y";
             // 
-            // textBox18
+            // tb_setX_macro3
             // 
-            this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox18.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox18.Location = new System.Drawing.Point(125, 72);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(57, 33);
-            this.textBox18.TabIndex = 76;
+            this.tb_setX_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setX_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setX_macro3.Location = new System.Drawing.Point(125, 72);
+            this.tb_setX_macro3.Name = "tb_setX_macro3";
+            this.tb_setX_macro3.Size = new System.Drawing.Size(57, 33);
+            this.tb_setX_macro3.TabIndex = 76;
             // 
-            // textBox19
+            // tb_setY_macro3
             // 
-            this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox19.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox19.Location = new System.Drawing.Point(125, 133);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(57, 33);
-            this.textBox19.TabIndex = 78;
+            this.tb_setY_macro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setY_macro3.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setY_macro3.Location = new System.Drawing.Point(125, 133);
+            this.tb_setY_macro3.Name = "tb_setY_macro3";
+            this.tb_setY_macro3.Size = new System.Drawing.Size(57, 33);
+            this.tb_setY_macro3.TabIndex = 78;
             // 
             // label20
             // 
@@ -723,21 +728,21 @@
             // tab_macro4
             // 
             this.tab_macro4.BackColor = System.Drawing.Color.White;
-            this.tab_macro4.Controls.Add(this.button5);
-            this.tab_macro4.Controls.Add(this.textBox20);
-            this.tab_macro4.Controls.Add(this.button6);
+            this.tab_macro4.Controls.Add(this.btn_save4);
+            this.tab_macro4.Controls.Add(this.tb_macro4);
+            this.tab_macro4.Controls.Add(this.btn_exit4);
             this.tab_macro4.Controls.Add(this.label21);
-            this.tab_macro4.Controls.Add(this.textBox21);
+            this.tab_macro4.Controls.Add(this.tb_setR_macro4);
             this.tab_macro4.Controls.Add(this.label22);
-            this.tab_macro4.Controls.Add(this.textBox22);
+            this.tab_macro4.Controls.Add(this.tb_setP_macro4);
             this.tab_macro4.Controls.Add(this.label24);
-            this.tab_macro4.Controls.Add(this.textBox23);
+            this.tab_macro4.Controls.Add(this.tb_setW_macro4);
             this.tab_macro4.Controls.Add(this.label25);
-            this.tab_macro4.Controls.Add(this.textBox24);
+            this.tab_macro4.Controls.Add(this.tb_setZ_macro4);
             this.tab_macro4.Controls.Add(this.label26);
             this.tab_macro4.Controls.Add(this.label27);
-            this.tab_macro4.Controls.Add(this.textBox25);
-            this.tab_macro4.Controls.Add(this.textBox26);
+            this.tab_macro4.Controls.Add(this.tb_setX_macro4);
+            this.tab_macro4.Controls.Add(this.tb_setY_macro4);
             this.tab_macro4.Controls.Add(this.label28);
             this.tab_macro4.Location = new System.Drawing.Point(4, 37);
             this.tab_macro4.Name = "tab_macro4";
@@ -746,61 +751,63 @@
             this.tab_macro4.TabIndex = 3;
             this.tab_macro4.Text = "Macro 4";
             // 
-            // button5
+            // btn_save4
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
-            this.button5.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(5, 239);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 43);
-            this.button5.TabIndex = 90;
-            this.button5.Text = "SAVE";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_save4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(79)))), ((int)(((byte)(208)))));
+            this.btn_save4.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_save4.ForeColor = System.Drawing.Color.White;
+            this.btn_save4.Location = new System.Drawing.Point(5, 241);
+            this.btn_save4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_save4.Name = "btn_save4";
+            this.btn_save4.Size = new System.Drawing.Size(114, 50);
+            this.btn_save4.TabIndex = 90;
+            this.btn_save4.Text = "SAVE";
+            this.btn_save4.UseVisualStyleBackColor = false;
+            this.btn_save4.Click += new System.EventHandler(this.btn_save4_Click);
             // 
-            // textBox20
+            // tb_macro4
             // 
-            this.textBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox20.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox20.Location = new System.Drawing.Point(231, 15);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(136, 33);
-            this.textBox20.TabIndex = 89;
+            this.tb_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_macro4.Location = new System.Drawing.Point(231, 15);
+            this.tb_macro4.Name = "tb_macro4";
+            this.tb_macro4.Size = new System.Drawing.Size(136, 33);
+            this.tb_macro4.TabIndex = 89;
             // 
-            // button6
+            // btn_exit4
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button6.Font = new System.Drawing.Font("Pretendard", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(332, 239);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(86, 43);
-            this.button6.TabIndex = 77;
-            this.button6.Text = "EXIT";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_exit4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_exit4.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_exit4.ForeColor = System.Drawing.Color.White;
+            this.btn_exit4.Location = new System.Drawing.Point(304, 241);
+            this.btn_exit4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_exit4.Name = "btn_exit4";
+            this.btn_exit4.Size = new System.Drawing.Size(114, 50);
+            this.btn_exit4.TabIndex = 77;
+            this.btn_exit4.Text = "EXIT";
+            this.btn_exit4.UseVisualStyleBackColor = false;
+            this.btn_exit4.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label21.Location = new System.Drawing.Point(59, 16);
+            this.label21.Location = new System.Drawing.Point(40, 16);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(167, 32);
+            this.label21.Size = new System.Drawing.Size(191, 32);
             this.label21.TabIndex = 88;
-            this.label21.Text = "Macro Name";
+            this.label21.Text = "Macro 4 Name";
             // 
-            // textBox21
+            // tb_setR_macro4
             // 
-            this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox21.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox21.Location = new System.Drawing.Point(265, 203);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(57, 33);
-            this.textBox21.TabIndex = 87;
+            this.tb_setR_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setR_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setR_macro4.Location = new System.Drawing.Point(265, 203);
+            this.tb_setR_macro4.Name = "tb_setR_macro4";
+            this.tb_setR_macro4.Size = new System.Drawing.Size(57, 33);
+            this.tb_setR_macro4.TabIndex = 87;
             // 
             // label22
             // 
@@ -814,14 +821,14 @@
             this.label22.TabIndex = 86;
             this.label22.Text = "R";
             // 
-            // textBox22
+            // tb_setP_macro4
             // 
-            this.textBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox22.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox22.Location = new System.Drawing.Point(265, 136);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(57, 33);
-            this.textBox22.TabIndex = 85;
+            this.tb_setP_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setP_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setP_macro4.Location = new System.Drawing.Point(265, 136);
+            this.tb_setP_macro4.Name = "tb_setP_macro4";
+            this.tb_setP_macro4.Size = new System.Drawing.Size(57, 33);
+            this.tb_setP_macro4.TabIndex = 85;
             // 
             // label24
             // 
@@ -835,14 +842,14 @@
             this.label24.TabIndex = 84;
             this.label24.Text = "P";
             // 
-            // textBox23
+            // tb_setW_macro4
             // 
-            this.textBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox23.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox23.Location = new System.Drawing.Point(265, 73);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(57, 33);
-            this.textBox23.TabIndex = 83;
+            this.tb_setW_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setW_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setW_macro4.Location = new System.Drawing.Point(265, 73);
+            this.tb_setW_macro4.Name = "tb_setW_macro4";
+            this.tb_setW_macro4.Size = new System.Drawing.Size(57, 33);
+            this.tb_setW_macro4.TabIndex = 83;
             // 
             // label25
             // 
@@ -856,14 +863,14 @@
             this.label25.TabIndex = 82;
             this.label25.Text = "W";
             // 
-            // textBox24
+            // tb_setZ_macro4
             // 
-            this.textBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox24.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox24.Location = new System.Drawing.Point(124, 200);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(57, 33);
-            this.textBox24.TabIndex = 81;
+            this.tb_setZ_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setZ_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setZ_macro4.Location = new System.Drawing.Point(124, 200);
+            this.tb_setZ_macro4.Name = "tb_setZ_macro4";
+            this.tb_setZ_macro4.Size = new System.Drawing.Size(57, 33);
+            this.tb_setZ_macro4.TabIndex = 81;
             // 
             // label26
             // 
@@ -889,23 +896,23 @@
             this.label27.TabIndex = 79;
             this.label27.Text = "Y";
             // 
-            // textBox25
+            // tb_setX_macro4
             // 
-            this.textBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox25.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox25.Location = new System.Drawing.Point(125, 72);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(57, 33);
-            this.textBox25.TabIndex = 76;
+            this.tb_setX_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setX_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setX_macro4.Location = new System.Drawing.Point(125, 72);
+            this.tb_setX_macro4.Name = "tb_setX_macro4";
+            this.tb_setX_macro4.Size = new System.Drawing.Size(57, 33);
+            this.tb_setX_macro4.TabIndex = 76;
             // 
-            // textBox26
+            // tb_setY_macro4
             // 
-            this.textBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox26.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox26.Location = new System.Drawing.Point(125, 133);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(57, 33);
-            this.textBox26.TabIndex = 78;
+            this.tb_setY_macro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_setY_macro4.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_setY_macro4.Location = new System.Drawing.Point(125, 133);
+            this.tb_setY_macro4.Name = "tb_setY_macro4";
+            this.tb_setY_macro4.Size = new System.Drawing.Size(57, 33);
+            this.tb_setY_macro4.TabIndex = 78;
             // 
             // label28
             // 
@@ -928,6 +935,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "editMacroForm_RPCS";
             this.Text = "editMacroForm";
+            this.Load += new System.EventHandler(this.editMacroForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tab_macro1.ResumeLayout(false);
             this.tab_macro1.PerformLayout();
@@ -941,75 +949,80 @@
 
         }
 
+        private void EditMacroForm_RPCS_Load(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
         #endregion
         private System.Windows.Forms.TextBox tb_setX_macro1;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_exit1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tab_macro1;
         private System.Windows.Forms.TabPage tab_macro2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_setY_macro1;
         private System.Windows.Forms.TabPage tab_macro3;
         private System.Windows.Forms.TabPage tab_macro4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_setR_macro1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_setP_macro1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_setW_macro1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_setZ_macro1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_macro1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_save1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_save2;
+        private System.Windows.Forms.TextBox tb_macro2;
+        private System.Windows.Forms.Button btn_exit2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tb_setR_macro2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tb_setP_macro2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tb_setW_macro2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tb_setZ_macro2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tb_setX_macro2;
+        private System.Windows.Forms.TextBox tb_setY_macro2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_save3;
+        private System.Windows.Forms.TextBox tb_macro3;
+        private System.Windows.Forms.Button btn_exit3;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox tb_setR_macro3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tb_setP_macro3;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tb_setW_macro3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox tb_setZ_macro3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox tb_setX_macro3;
+        private System.Windows.Forms.TextBox tb_setY_macro3;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_save4;
+        private System.Windows.Forms.TextBox tb_macro4;
+        private System.Windows.Forms.Button btn_exit4;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox tb_setR_macro4;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox tb_setP_macro4;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox tb_setW_macro4;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox tb_setZ_macro4;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox tb_setX_macro4;
+        private System.Windows.Forms.TextBox tb_setY_macro4;
         private System.Windows.Forms.Label label28;
     }
 }

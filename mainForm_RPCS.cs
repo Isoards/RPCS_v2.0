@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RPCS
 {
@@ -213,6 +214,178 @@ namespace RPCS
                 settingForm.Activate();
             }
         }
+        // 매크로 설정 관련 이벤트
+        public void Macro_setting()
+        {
+            int i = 0;
+            if (File.Exists("Macro.txt"))
+            {
+                StreamReader macro = new StreamReader("Macro.txt");
+                String line;
+                while ((line = macro.ReadLine()) != null)
+                {
+                    string[] posArr = line.Split(' ');
+                    if (i == 0)
+                    {
+                        btn_macro1.Text = posArr[0];
+                    }
+                    else if (i == 1)
+                    {
+                        btn_macro2.Text = posArr[0];
+                    }
+                    else if (i == 2)
+                    {
+                        btn_macro3.Text = posArr[0];
+                    }
+                    else if (i == 3)
+                    {
+                        btn_macro4.Text = posArr[0];
+                    }
+                    i++;
+                }
+                macro.Close();
+            }
+            else
+            {
+                MessageBox.Show("읽을 파일이 없습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Macro(int number)
+        {
+            if (!File.Exists("Macro.txt"))
+            {
+                MessageBox.Show("읽을 파일이 없습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string[] lines = File.ReadAllLines("Macro.txt");
+
+            if (lines.Length <= number)
+            {
+                MessageBox.Show($"매크로 {number + 1}에 대한 데이터가 없습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string[] posArr = lines[number].Split(' ');
+
+            if (posArr.Length < 7)
+            {
+                MessageBox.Show($"매크로 {number + 1}의 데이터 형식이 올바르지 않습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                Array sngArray = new float[6];
+                Array intConfig = new short[7];
+
+                for (int i = 0; i < 6; i++)
+                {
+                    sngArray.SetValue(float.Parse(posArr[i + 1]), i);
+                }
+
+                short[] configValues = { 1, 0, 1, 1, 0, 0, 0 };
+                for (int i = 0; i < 7; i++)
+                {
+                    intConfig.SetValue(configValues[i], i);
+                }
+
+                // mobjPosRegXyzwpr.SetValueXyzwpr(4, ref sngArray, ref intConfig);
+                // mobjPosRegXyzwpr.Update();
+
+                movement_log.AppendText($"\r\n{posArr[0]} Robot Moved || X:{posArr[1]}, Y:{posArr[2]}, Z:{posArr[3]} " +
+                    $"|| W:{posArr[4]}, P:{posArr[5]}, R:{posArr[6]}");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show($"매크로 {number + 1}의 데이터 형식이 올바르지 않습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"오류 발생: {ex.Message}", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        // 기존 코드
+        //private void Macro(int number)
+        //{
+        //    int i = 0;
+        //    if (File.Exists("Macro.txt"))
+        //    {
+        //        StreamReader macro = new StreamReader("Macro.txt");
+        //        String line;
+        //        while ((line = macro.ReadLine()) != null)
+        //        {
+        //            string[] posArr = line.Split(' ');
+        //            if (i == number)
+        //            {
+        //                Array sngArray = new float[6];
+        //                Array intConfig = new short[7];
+        //                //sngArray.SetValue(float.Parse(posArr[1]) + originPos[0], 0);//RoboGuide에서 할때
+        //                sngArray.SetValue(float.Parse(posArr[1]), 0);
+        //                sngArray.SetValue(float.Parse(posArr[2]), 1);
+        //                sngArray.SetValue(float.Parse(posArr[3]), 2);
+        //                sngArray.SetValue(float.Parse(posArr[4]), 3);
+        //                sngArray.SetValue(float.Parse(posArr[5]), 4);
+        //                sngArray.SetValue(float.Parse(posArr[6]), 5);
+
+        //                intConfig.SetValue((short)1, 0);
+        //                intConfig.SetValue((short)0, 1);
+        //                intConfig.SetValue((short)1, 2);
+        //                intConfig.SetValue((short)1, 3);
+        //                intConfig.SetValue((short)0, 4);
+        //                intConfig.SetValue((short)0, 5);
+        //                intConfig.SetValue((short)0, 6);
+
+        //                //mobjPosReg.SetValueXyzwpr(4, ref sngArray, ref intConfig, 1, 1);
+        //                //mobjPosRegXyzwpr.SetValueXyzwpr(4, ref sngArray, ref intConfig);
+        //                //mobjPosRegXyzwpr.Update();
+
+        //                int intVal = 0;
+        //                string strVal;
+        //                string str_filename = "GOTO";
+
+        //                //strVal = "";
+        //                //mobjSysVarCustName.SetValue(strVal); //$CUST_START = "" : blank, no program
+        //                //mobjSysVarRMT_MASTER.SetValue(intVal); // $RMT_MASTER=0 : for remote control
+        //                //mobjSysVarCustStart.SetValue(intVal); // $CUST_START = 0 : for stop program
+
+        //                //strVal = str_filename;
+        //                //mobjSysVarCustName.SetValue(strVal);
+        //                //intVal = 0;
+        //                //mobjSysVarRMT_MASTER.SetValue(intVal);
+        //                //intVal = 1;
+        //                //mobjSysVarCustStart.SetValue(intVal);
+        //                movement_log.AppendText("\r\n" + posArr[0] + " Robot Moved || X:" + posArr[1] + ", Y: " + posArr[2] + ", Z: " + posArr[3] +
+        //                    " || W:" + posArr[4] + ", P: " + posArr[5] + ", R: " + posArr[6]);
+        //            }
+        //            i++;
+        //        }
+        //        macro.Close();
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("읽을 파일이 없습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
+        private void btn_macro1_Click(object sender, EventArgs e)
+        {
+            Macro(0);
+        }
+        private void btn_macro2_Click(object sender, EventArgs e)
+        {
+            Macro(1);
+        }
+
+        private void btn_macro3_Click(object sender, EventArgs e)
+        {
+            Macro(2);
+        }
+
+        private void btn_macro4_Click(object sender, EventArgs e)
+        {
+            Macro(3);
+        }
         // LOAD 버튼 클릭 이벤트
         private void btn_load_Click(object sender, EventArgs e)
         {
@@ -310,6 +483,63 @@ namespace RPCS
                     lv_pos.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
                 }
             }
+        }
+
+        private void btn_goto_Click(object sender, EventArgs e)
+        {
+            Array sngArray = new float[6];
+            Array intConfig = new short[7];
+
+            /* (index, value), set R[2] = 0
+             * if R[2] == 1, GOTO Complete*/
+            //if (mobjNumReg.SetValue(2, 0) == false)
+            //{
+            //    MessageBox.Show("SetNumReg Int Error");
+            //}
+            //sngArray.SetValue(float.Parse(tb_setX.Text) + originPos[0], 0);
+            //sngArray.SetValue(float.Parse(tb_setY.Text) + originPos[1], 1);
+            //sngArray.SetValue(float.Parse(tb_setZ.Text) + originPos[2], 2);
+            //sngArray.SetValue(float.Parse(tb_setW.Text) + originPos[3], 3);
+            //sngArray.SetValue(float.Parse(tb_setP.Text) + originPos[4], 4);
+            //sngArray.SetValue(float.Parse(tb_setR.Text) + originPos[5], 5);
+
+            //intConfig.SetValue((short)1, 0);
+            //intConfig.SetValue((short)0, 1);
+            //intConfig.SetValue((short)1, 2);
+            //intConfig.SetValue((short)1, 3);
+            //intConfig.SetValue((short)0, 4);
+            //intConfig.SetValue((short)0, 5);
+            //intConfig.SetValue((short)0, 6);
+
+            //mobjPosReg.SetValueXyzwpr(4, ref sngArray, ref intConfig, 1, 1);
+
+            //mobjPosRegXyzwpr.SetValueXyzwpr(4, ref sngArray, ref intConfig);
+            //mobjPosRegXyzwpr.Update();
+
+            //int intVal = 0;
+            //string strVal;
+            //string str_filename = "GOTO";
+
+            //strVal = "";
+            //mobjSysVarCustName.SetValue(strVal); //$CUST_START = "" : blank, no program
+            //mobjSysVarRMT_MASTER.SetValue(intVal); // $RMT_MASTER=0 : for remote control
+            //mobjSysVarCustStart.SetValue(intVal); // $CUST_START = 0 : for stop program
+
+            //strVal = str_filename;
+            //mobjSysVarCustName.SetValue(strVal);
+            //intVal = 0;
+            //mobjSysVarRMT_MASTER.SetValue(intVal);
+            //intVal = 1;
+            //mobjSysVarCustStart.SetValue(intVal);
+
+            movement_log.Clear();
+            movement_log.AppendText("Goto : " + Environment.NewLine);
+            movement_log.AppendText("X : " + tb_setX.Text + Environment.NewLine);
+            movement_log.AppendText("Y : " + tb_setY.Text + Environment.NewLine);
+            movement_log.AppendText("Z : " + tb_setZ.Text + Environment.NewLine);
+            movement_log.AppendText("W : " + tb_setW.Text + Environment.NewLine);
+            movement_log.AppendText("P : " + tb_setP.Text + Environment.NewLine);
+            movement_log.AppendText("R : " + tb_setR.Text + Environment.NewLine);
         }
     }
     public static class ControlExtensions
