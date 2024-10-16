@@ -31,7 +31,7 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.tb_setX_macro1 = new System.Windows.Forms.TextBox();
+            this.tb_m1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_M1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,10 +39,10 @@
             this.button13 = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.tb_turnTableAngle = new System.Windows.Forms.TextBox();
+            this.btn_turnTableAngle = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_m2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -86,14 +86,14 @@
             this.label55.TabIndex = 43;
             this.label55.Text = "M1 RPM";
             // 
-            // tb_setX_macro1
+            // tb_m1
             // 
-            this.tb_setX_macro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.tb_setX_macro1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_setX_macro1.Location = new System.Drawing.Point(197, 66);
-            this.tb_setX_macro1.Name = "tb_setX_macro1";
-            this.tb_setX_macro1.Size = new System.Drawing.Size(84, 33);
-            this.tb_setX_macro1.TabIndex = 46;
+            this.tb_m1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_m1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_m1.Location = new System.Drawing.Point(197, 66);
+            this.tb_m1.Name = "tb_m1";
+            this.tb_m1.Size = new System.Drawing.Size(84, 33);
+            this.tb_m1.TabIndex = 46;
             // 
             // label1
             // 
@@ -140,10 +140,10 @@
             this.target_position.Controls.Add(this.button13);
             this.target_position.Controls.Add(this.btn_exit);
             this.target_position.Controls.Add(this.button14);
-            this.target_position.Controls.Add(this.textBox2);
-            this.target_position.Controls.Add(this.button7);
+            this.target_position.Controls.Add(this.tb_turnTableAngle);
+            this.target_position.Controls.Add(this.btn_turnTableAngle);
             this.target_position.Controls.Add(this.button8);
-            this.target_position.Controls.Add(this.textBox1);
+            this.target_position.Controls.Add(this.tb_m2);
             this.target_position.Controls.Add(this.button3);
             this.target_position.Controls.Add(this.button5);
             this.target_position.Controls.Add(this.label53);
@@ -152,7 +152,7 @@
             this.target_position.Controls.Add(this.label55);
             this.target_position.Controls.Add(this.label54);
             this.target_position.Controls.Add(this.label1);
-            this.target_position.Controls.Add(this.tb_setX_macro1);
+            this.target_position.Controls.Add(this.tb_m1);
             this.target_position.Controls.Add(this.btn_M1);
             this.target_position.Controls.Add(this.button1);
             this.target_position.Location = new System.Drawing.Point(11, 11);
@@ -201,27 +201,29 @@
             this.button14.Text = "SPEED DOWN";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // tb_turnTableAngle
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.Location = new System.Drawing.Point(197, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 33);
-            this.textBox2.TabIndex = 56;
+            this.tb_turnTableAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_turnTableAngle.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_turnTableAngle.Location = new System.Drawing.Point(197, 173);
+            this.tb_turnTableAngle.Name = "tb_turnTableAngle";
+            this.tb_turnTableAngle.Size = new System.Drawing.Size(84, 33);
+            this.tb_turnTableAngle.TabIndex = 56;
+            tb_turnTableAngle.KeyPress += tb_turnTableAngle_KeyPress;
             // 
-            // button7
+            // btn_turnTableAngle
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button7.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(286, 173);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(64, 35);
-            this.button7.TabIndex = 57;
-            this.button7.Text = "GO";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_turnTableAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_turnTableAngle.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_turnTableAngle.ForeColor = System.Drawing.Color.White;
+            this.btn_turnTableAngle.Location = new System.Drawing.Point(286, 173);
+            this.btn_turnTableAngle.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_turnTableAngle.Name = "btn_turnTableAngle";
+            this.btn_turnTableAngle.Size = new System.Drawing.Size(64, 35);
+            this.btn_turnTableAngle.TabIndex = 57;
+            this.btn_turnTableAngle.Text = "GO";
+            this.btn_turnTableAngle.UseVisualStyleBackColor = false;
+            this.btn_turnTableAngle.Click += new System.EventHandler(this.btn_turnTableAngle_Click);
             // 
             // button8
             // 
@@ -236,14 +238,14 @@
             this.button8.Text = "STOP";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tb_m2
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.textBox1.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(197, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(84, 33);
-            this.textBox1.TabIndex = 53;
+            this.tb_m2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.tb_m2.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_m2.Location = new System.Drawing.Point(197, 122);
+            this.tb_m2.Name = "tb_m2";
+            this.tb_m2.Size = new System.Drawing.Size(84, 33);
+            this.tb_m2.TabIndex = 53;
             // 
             // button3
             // 
@@ -311,15 +313,15 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TextBox tb_setX_macro1;
+        private System.Windows.Forms.TextBox tb_m1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_M1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel target_position;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox tb_turnTableAngle;
+        private System.Windows.Forms.Button btn_turnTableAngle;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_m2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;

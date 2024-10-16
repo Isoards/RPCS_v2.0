@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace RPCS
@@ -7,10 +8,17 @@ namespace RPCS
     public class Turntable
     {
         public float Angle { get; private set; }
+        public event EventHandler AngleChanged;
 
-        public void GetTurnTableAngle()
+        public void GetTurnTableAngle(float angleRotate)
         {
-            Angle = (Angle + 1) % 360;
+            Angle = (Angle + angleRotate) % 360;
+            if (Angle < 0)
+            {
+                Angle += 360;
+            }
+            AngleChanged?.Invoke(this, EventArgs.Empty);
+            //Angle = (Angle + 1) % 360;
         }
 
     }
@@ -19,7 +27,8 @@ namespace RPCS
     public class TurntableDisplay : Control
     {
         private Turntable turntable;
-
+        private float targetAngle;
+        private System.Windows.Forms.Timer animationTimer;
         public TurntableDisplay(Turntable turntable)
         {
             this.turntable = turntable;
@@ -29,20 +38,32 @@ namespace RPCS
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
-            e.Graphics.TranslateTransform(211, 228);
-            e.Graphics.RotateTransform(-90);
-            e.Graphics.RotateTransform(turntable.Angle);
-
-            using (Pen pen = new Pen(Color.FromArgb(45, 107, 255), 3))
+            // 안티앨리어싱 적용
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            // 중심점으로 이동
+            e.Graphics.TranslateTransform(211, 211);
+            // 기준선 그리기
+            using (Pen referencePen = new Pen(Color.FromArgb(224, 224, 224), 4))
             {
-                e.Graphics.DrawLine(pen, 0, 0, 150, 0);
+                referencePen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+                e.Graphics.DrawLine(referencePen, 0, 0, 0, -150);
             }
-            using (Pen circlePen = new Pen(Color.FromArgb(45, 107, 255), 2))
+
+            // 원 그리기
+            using (Pen circlePen = new Pen(Color.FromArgb(45, 107, 255), 3))
             {
                 e.Graphics.DrawEllipse(circlePen, -150, -150, 300, 300);
             }
 
+            // 회전 적용
+            e.Graphics.RotateTransform(-90);
+            e.Graphics.RotateTransform(turntable.Angle);
+
+            // 회전하는 선 그리기
+            using (Pen pen = new Pen(Color.FromArgb(45, 107, 255), 3))
+            {
+                e.Graphics.DrawLine(pen, 0, 0, 150, 0);
+            }
         }
     }
 }

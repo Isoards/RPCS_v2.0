@@ -18,7 +18,7 @@ namespace RPCS
         private const string cnstApp = "Robot Host Connection";
         private const string cnstSection = "Settings";
 
-        private Turntable turntable;
+        public Turntable turntable { get; private set; }
         private TurntableDisplay turntableDisplay;
         public mainForm_RPCS()
         {
@@ -59,10 +59,9 @@ namespace RPCS
         }
         private void UpdateTimer_Tick(object sender, EventArgs e)
         {
-            turntable.GetTurnTableAngle();
+            //turntable.GetTurnTableAngle();
             //lblTurnTableAngle.Text = $"{turntable.Angle:F2}°";
             lblTurnTableAngle.InvokeIfNeeded(() => lblTurnTableAngle.Text = $"{turntable.Angle:F0}°");
-            //tbTurnTableAngle.InvokeIfNeeded(() => tbTurnTableAngle.Text = $"{turntable.Angle:F0}°");
             turntableDisplay.Invalidate();
         }
 
@@ -150,7 +149,6 @@ namespace RPCS
         private void msubDisconnected()
         {
             MessageBox.Show("Connect error");
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -172,14 +170,23 @@ namespace RPCS
                 chk = false;
             }
 
-            //// mod1 폼 열기
+            // mod1 폼 열기
             //mod1Form newMod1Form = new mod1Form();
             //newMod1Form.Show();
         }
         // PROGRAM EXIT 버튼 클릭 이벤트
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show(
+                "프로그램을 종료하시겠습니까?",  
+                "종료 확인",                     
+                MessageBoxButtons.YesNo,         
+                MessageBoxIcon.Question          
+                );
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
         // Edit Macro 버튼 클릭 이벤트
         private void btn_editMacro_Click(object sender, EventArgs e)
@@ -203,7 +210,7 @@ namespace RPCS
         {
             if (settingForm == null || settingForm.IsDisposed) // 폼이 열려있지 않을 경우
             {
-                settingForm = new settingForm_RPCS();
+                settingForm = new settingForm_RPCS(this);
                 settingForm.Owner = this;
                 settingForm.FormClosed += (s, args) => settingForm = null;
                 settingForm.StartPosition = FormStartPosition.CenterParent;
@@ -372,6 +379,7 @@ namespace RPCS
         {
             Macro(0);
         }
+
         private void btn_macro2_Click(object sender, EventArgs e)
         {
             Macro(1);
@@ -481,6 +489,11 @@ namespace RPCS
                 if (cellValue.Equals("Progress", StringComparison.OrdinalIgnoreCase))
                 {
                     lv_pos.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
+                }
+                else if (cellValue.Equals("Success", StringComparison.OrdinalIgnoreCase))
+                {
+                    lv_pos.Rows[e.RowIndex].Cells[0].Style.BackColor = Color.LightGreen;
+
                 }
             }
         }
