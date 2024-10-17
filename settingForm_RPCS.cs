@@ -9,13 +9,11 @@ namespace RPCS
         public settingForm_RPCS(mainForm_RPCS mainForm)
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            this.mainForm = mainForm; // mainForm_RPCS의 인스턴스를 받아옴
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        // 턴테이블 각도 변경
+        // float로 소숫점까지 입력 가능하게 했는데, 필요한가?
         private void tb_turnTableAngle_KeyPress(object sender, KeyPressEventArgs e)
         {
             // 숫자, 백스페이스, 소수점만 허용
@@ -32,25 +30,22 @@ namespace RPCS
                 return;
             }
         }
-
+        // 턴테이블 각도 변경 버튼 클릭 이벤트
         private void btn_turnTableAngle_Click(object sender, EventArgs e)
         {
             if (float.TryParse(tb_turnTableAngle.Text, out float angle))
             {
                 mainForm.turntable.GetTurnTableAngle(angle);
-                //Turntable turntable = new Turntable();
-                //turntable.GetTurnTableAngle(angle);
-                //turntableDisplay.Invalidate();
-                //mainForm_RPCS?.turntableDisplay?.Invalidate();
-                // UpdateTimer_Tick(null, EventArgs.Empty);
-                // 성공적으로 각도가 변경되었을 때의 처리
-                // 예: UpdateTurntableDisplay(turntable.Angle);
             }
             else
             {
                 MessageBox.Show("올바른 각도 값을 입력해주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        // EXIT 버튼 클릭 이벤트
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

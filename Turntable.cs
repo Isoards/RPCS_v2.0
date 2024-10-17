@@ -10,6 +10,7 @@ namespace RPCS
         public float Angle { get; private set; }
         public event EventHandler AngleChanged;
 
+        // 턴테이블의 현재 각도를 변경하는 메서드
         public void GetTurnTableAngle(float angleRotate)
         {
             Angle = (Angle + angleRotate) % 360;
@@ -18,7 +19,7 @@ namespace RPCS
                 Angle += 360;
             }
             AngleChanged?.Invoke(this, EventArgs.Empty);
-            //Angle = (Angle + 1) % 360;
+            //Angle = (Angle + 1) % 360; 계속 회전하게 만드는 코드
         }
 
     }
@@ -28,7 +29,7 @@ namespace RPCS
     {
         private Turntable turntable;
         private float targetAngle;
-        private System.Windows.Forms.Timer animationTimer;
+
         public TurntableDisplay(Turntable turntable)
         {
             this.turntable = turntable;
@@ -42,6 +43,7 @@ namespace RPCS
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             // 중심점으로 이동
             e.Graphics.TranslateTransform(211, 211);
+
             // 기준선 그리기
             using (Pen referencePen = new Pen(Color.FromArgb(224, 224, 224), 4))
             {

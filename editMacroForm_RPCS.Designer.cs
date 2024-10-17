@@ -125,7 +125,6 @@
             this.label23.Size = new System.Drawing.Size(31, 32);
             this.label23.TabIndex = 28;
             this.label23.Text = "X";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // btn_exit1
             // 
@@ -204,7 +203,6 @@
             this.tb_macro1.Name = "tb_macro1";
             this.tb_macro1.Size = new System.Drawing.Size(136, 33);
             this.tb_macro1.TabIndex = 73;
-            this.tb_macro1.TextChanged += new System.EventHandler(this.tb_macro1_TextChanged);
             // 
             // label6
             // 

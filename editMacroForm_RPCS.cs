@@ -12,11 +12,6 @@ namespace RPCS
             InitializeComponent();
         }
 
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void editMacroForm_Load(object sender, EventArgs e)
         {
             this.Text = "Macro";
@@ -98,83 +93,7 @@ namespace RPCS
             return $"{macro.Text} {x.Text} {y.Text} {z.Text} {w.Text} {p.Text} {r.Text}";
         }
 
-        // 기존 코드
-        //private void editMacroForm_Load(object sender, EventArgs e)
-        //{
-        //    this.Text = "Macro";
-        //    int i = 0;
-
-        //    if (File.Exists("Macro.txt"))
-        //    {
-        //        StreamReader macro = new StreamReader("Macro.txt");
-        //        String line;
-        //        while ((line = macro.ReadLine()) != null)
-        //        {
-        //            string[] posArr = line.Split(' ');
-        //            if (i == 0)
-        //            {
-        //                tb_macro1.Text = posArr[0];
-        //                tb_setX_macro1.Text = posArr[1];
-        //                tb_setY_macro1.Text = posArr[2];
-        //                tb_setZ_macro1.Text = posArr[3];
-        //                tb_setW_macro1.Text = posArr[4];
-        //                tb_setP_macro1.Text = posArr[5];
-        //                tb_setR_macro1.Text = posArr[6];
-        //            }
-        //            else if (i == 1)
-        //            {
-        //                tb_macro2.Text = posArr[0];
-        //                tb_setX_macro2.Text = posArr[1];
-        //                tb_setY_macro2.Text = posArr[2];
-        //                tb_setZ_macro2.Text = posArr[3];
-        //                tb_setW_macro2.Text = posArr[4];
-        //                tb_setP_macro2.Text = posArr[5];
-        //                tb_setR_macro2.Text = posArr[6];
-        //            }
-        //            else if (i == 2)
-        //            {
-        //                tb_macro3.Text = posArr[0];
-        //                tb_setX_macro3.Text = posArr[1];
-        //                tb_setY_macro3.Text = posArr[2];
-        //                tb_setZ_macro3.Text = posArr[3];
-        //                tb_setW_macro3.Text = posArr[4];
-        //                tb_setP_macro3.Text = posArr[5];
-        //                tb_setR_macro3.Text = posArr[6];
-        //            }
-        //            else if (i == 3)
-        //            {
-        //                tb_macro4.Text = posArr[0];
-        //                tb_setX_macro4.Text = posArr[1];
-        //                tb_setY_macro4.Text = posArr[2];
-        //                tb_setZ_macro4.Text = posArr[3];
-        //                tb_setW_macro4.Text = posArr[4];
-        //                tb_setP_macro4.Text = posArr[5];
-        //                tb_setR_macro4.Text = posArr[6];
-        //            }
-        //            i++;
-        //        }
-        //        macro.Close();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("읽을 파일이 없습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        this.Close();
-        //    }
-        //}
-        //public void FileWrite()        //파일 이름과 저장할 데이터를 매개변수로 지정   
-        //{
-        //    string text = null;
-
-        //    text += tb_macro1.Text + " " + tb_setX_macro1.Text + " " + tb_setY_macro1.Text + " " + tb_setZ_macro1.Text + " " + tb_setW_macro1.Text + " " + tb_setP_macro1.Text + " " + tb_setR_macro1.Text + "\r\n" +
-        //        tb_macro2.Text + " " + tb_setX_macro2.Text + " " + tb_setY_macro2.Text + " " + tb_setZ_macro2.Text + " " + tb_setW_macro2.Text + " " + tb_setP_macro2.Text + " " + tb_setR_macro2.Text + "\r\n" +
-        //            tb_macro3.Text + " " + tb_setX_macro3.Text + " " + tb_setY_macro3.Text + " " + tb_setZ_macro3.Text + " " + tb_setW_macro3.Text + " " + tb_setP_macro3.Text + " " + tb_setR_macro3.Text + "\r\n" +
-        //                tb_macro4.Text + " " + tb_setX_macro4.Text + " " + tb_setY_macro4.Text + " " + tb_setZ_macro4.Text + " " + tb_setW_macro4.Text + " " + tb_setP_macro4.Text + " " + tb_setR_macro4.Text;
-        //    using (StreamWriter macro = new StreamWriter("Macro.txt", false, Encoding.Default)) //StreamWriter(FileName,bool append Mode,Encoding)
-        //    {
-        //        macro.WriteLine(text);
-        //        macro.Close();
-        //    }
-        //}
+        // 숫자만 입력할 수 있도록 제한하는 코드인데 필요한가?....
         private void tb_setX_TextChanged(object sender, EventArgs e)
         {
             if (sender is TextBox tb)
@@ -219,21 +138,9 @@ namespace RPCS
                     cursorPosition = Math.Max(0, Math.Min(cursorPosition, tb.Text.Length));
                     tb.SelectionStart = cursorPosition;
                 }
-
             }
 
         }
-
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void tb_macro1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_save1_Click(object sender, EventArgs e)
         {
             mainForm_RPCS mainForm = new mainForm_RPCS();
@@ -260,6 +167,11 @@ namespace RPCS
             mainForm_RPCS mainForm = new mainForm_RPCS();
             FileWrite();
             mainForm.Macro_setting();
+        }
+        // EXIT 버튼 클릭 시 창 닫기
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

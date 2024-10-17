@@ -3,7 +3,6 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RPCS
 {
@@ -171,17 +170,18 @@ namespace RPCS
             }
 
             // mod1 폼 열기
-            //mod1Form newMod1Form = new mod1Form();
-            //newMod1Form.Show();
+            mod1Form newMod1Form = new mod1Form();
+            newMod1Form.Show();
+            this.Close();
         }
         // PROGRAM EXIT 버튼 클릭 이벤트
         private void btn_exit_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "프로그램을 종료하시겠습니까?",  
-                "종료 확인",                     
-                MessageBoxButtons.YesNo,         
-                MessageBoxIcon.Question          
+                "프로그램을 종료하시겠습니까?",
+                "종료 확인",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
                 );
             if (result == DialogResult.Yes)
             {
