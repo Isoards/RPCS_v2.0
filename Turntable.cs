@@ -50,6 +50,10 @@ namespace RPCS
                 referencePen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
                 e.Graphics.DrawLine(referencePen, 0, 0, 0, -150);
             }
+            using (SolidBrush origin = new SolidBrush(Color.FromArgb(255, 59, 48)))
+            {
+                e.Graphics.FillEllipse(origin, -4, -4, 8, 8);
+            }
 
             // 원 그리기
             using (Pen circlePen = new Pen(Color.FromArgb(45, 107, 255), 3))

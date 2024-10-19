@@ -47,5 +47,60 @@ namespace RPCS
         {
             this.Close();
         }
+
+        private void btn_speedup_Click(object sender, EventArgs e)
+        {
+
+            int speed = 0;
+            object value = null;
+
+            //if (mobjSysVarMCR_override.GetValue(ref value))
+            //{
+            //    speed = Convert.ToInt32(value);
+
+            //    if (speed < 5)
+            //    {
+            //        mobjSysVarMCR_override.SetValue(5);
+            //    }
+            //    else
+            //    {
+            //        mobjSysVarMCR_override.SetValue(speed + 5);
+            //    }
+            /*
+            if (speed == 1)
+            {
+                mobjSysVarMCR_override.SetValue(speed + 4);
+
+            }
+            else
+                mobjSysVarMCR_override.SetValue(speed + 5);
+            */
+            mainForm.movement_log.AppendText("Speed Up\r\n");
+
+            //txtResult.AppendText(Convert.ToString(speed));
+        }
+
+        private void btn_speeddown_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            object value = null;
+            //if (mobjSysVarMCR_override.GetValue(ref value))
+            //{
+            //    speed = Convert.ToInt32(value);
+            //    if (speed < 5)
+            //    {
+            //        mobjSysVarMCR_override.SetValue(5);
+            //    }
+            //    else
+            //    {
+            //        mobjSysVarMCR_override.SetValue(speed - 5);
+            //    }
+                // mobjSysVarMCR_override.SetValue(speed - 5);
+              
+                mainForm.movement_log.AppendText("Speed Down\r\n");
+
+                // txtResult.AppendText(Convert.ToString(speed));
+            }
+        }
     }
-}
+

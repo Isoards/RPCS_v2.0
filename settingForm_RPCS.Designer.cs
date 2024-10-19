@@ -36,9 +36,9 @@
             this.btn_M1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.target_position = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btn_speedup = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btn_speeddown = new System.Windows.Forms.Button();
             this.tb_turnTableAngle = new System.Windows.Forms.TextBox();
             this.btn_turnTableAngle = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -137,9 +137,9 @@
             // 
             this.target_position.BackColor = System.Drawing.Color.White;
             this.target_position.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.target_position.Controls.Add(this.button13);
+            this.target_position.Controls.Add(this.btn_speedup);
             this.target_position.Controls.Add(this.btn_exit);
-            this.target_position.Controls.Add(this.button14);
+            this.target_position.Controls.Add(this.btn_speeddown);
             this.target_position.Controls.Add(this.tb_turnTableAngle);
             this.target_position.Controls.Add(this.btn_turnTableAngle);
             this.target_position.Controls.Add(this.button8);
@@ -161,18 +161,19 @@
             this.target_position.Size = new System.Drawing.Size(471, 342);
             this.target_position.TabIndex = 61;
             // 
-            // button13
+            // btn_speedup
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button13.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(164, 280);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(118, 35);
-            this.button13.TabIndex = 60;
-            this.button13.Text = "SPEED UP";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btn_speedup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_speedup.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_speedup.ForeColor = System.Drawing.Color.White;
+            this.btn_speedup.Location = new System.Drawing.Point(164, 280);
+            this.btn_speedup.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_speedup.Name = "btn_speedup";
+            this.btn_speedup.Size = new System.Drawing.Size(118, 35);
+            this.btn_speedup.TabIndex = 60;
+            this.btn_speedup.Text = "SPEED UP";
+            this.btn_speedup.UseVisualStyleBackColor = false;
+            this.btn_speedup.Click += new System.EventHandler(this.btn_speedup_Click);
             // 
             // btn_exit
             // 
@@ -188,18 +189,19 @@
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // button14
+            // btn_speeddown
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(48)))));
-            this.button14.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(286, 281);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(147, 35);
-            this.button14.TabIndex = 61;
-            this.button14.Text = "SPEED DOWN";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btn_speeddown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(48)))));
+            this.btn_speeddown.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_speeddown.ForeColor = System.Drawing.Color.White;
+            this.btn_speeddown.Location = new System.Drawing.Point(286, 281);
+            this.btn_speeddown.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_speeddown.Name = "btn_speeddown";
+            this.btn_speeddown.Size = new System.Drawing.Size(147, 35);
+            this.btn_speeddown.TabIndex = 61;
+            this.btn_speeddown.Text = "SPEED DOWN";
+            this.btn_speeddown.UseVisualStyleBackColor = false;
+            this.btn_speeddown.Click += new System.EventHandler(this.btn_speeddown_Click);
             // 
             // tb_turnTableAngle
             // 
@@ -209,7 +211,6 @@
             this.tb_turnTableAngle.Name = "tb_turnTableAngle";
             this.tb_turnTableAngle.Size = new System.Drawing.Size(84, 33);
             this.tb_turnTableAngle.TabIndex = 56;
-            tb_turnTableAngle.KeyPress += tb_turnTableAngle_KeyPress;
             // 
             // btn_turnTableAngle
             // 
@@ -326,8 +327,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btn_speedup;
+        private System.Windows.Forms.Button btn_speeddown;
         private System.Windows.Forms.Button btn_exit;
     }
 }

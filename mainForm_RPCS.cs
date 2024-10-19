@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace RPCS
@@ -12,10 +13,12 @@ namespace RPCS
         private editMacroForm_RPCS editMacroForm;
         private settingForm_RPCS settingForm;
         private DateTime startTime;
-        private Timer operationTimer;
+        private System.Windows.Forms.Timer operationTimer;
         public string HostName;
-        private const string cnstApp = "Robot Host Connection";
+        private const string cnstApp = "Robot Host Connection"; // 팝업창 제목
         private const string cnstSection = "Settings";
+        private float[] originPos = new float[6]; // UF 텍스트 박스의 문자열이 실수로 변환되어 저장되는 버퍼
+
 
         public Turntable turntable { get; private set; }
         private TurntableDisplay turntableDisplay;
@@ -31,7 +34,7 @@ namespace RPCS
         {
             startTime = DateTime.Now;
 
-            operationTimer = new Timer();
+            operationTimer = new System.Windows.Forms.Timer();
             operationTimer.Interval = 1000; // 1초마다 업데이트
             operationTimer.Tick += OperationTimer_Tick;
             operationTimer.Start();
@@ -170,9 +173,9 @@ namespace RPCS
             }
 
             // mod1 폼 열기
-            mod1Form newMod1Form = new mod1Form();
-            newMod1Form.Show();
-            this.Close();
+            //mainForm_v1 newMod1Form = new mainForm_v1();
+            //newMod1Form.Show();
+            //this.Close();
         }
         // PROGRAM EXIT 버튼 클릭 이벤트
         private void btn_exit_Click(object sender, EventArgs e)
@@ -497,6 +500,49 @@ namespace RPCS
                 }
             }
         }
+        /* worker 스레드 선언 */
+        Thread Read_thread; // TPP 로 부터 데이터 수신 스레드
+        Thread Run_init_thread; // Run 누르면 초기화작업하는 스레드
+        Thread Run_process_thread; // 초기화 작업 후 Run 작업이 진행되는 스레드
+        private void cmdRun_Click(object per, EventArgs e)
+        {
+            /* 지나온 경로 clear */
+            //if (checkFlag(IsStopClicked))
+            //{
+            //    clearFlag(ref IsStopClicked);
+            //}
+
+            ///* 이미 RUN이 실행중인지 체크 */
+            //if (checkFlag(IsRunProcess))
+            //{
+            //    MessageBox.Show("Run 이 이미 실행중입니다", "message");
+            //    return;
+            //}
+
+            ///* PMAC이 연결되어 있는지 체크 */
+            //if (checkFlag(IsPMAC_Connected) == false)
+            //{
+            //    MessageBox.Show("PMAC 이 연결되지 않았습니다", "message");
+            //    return;
+            //}
+
+            ///* 해당 모션이 선택되었는지 체크 */
+            //if (Motion == 0)
+            //{
+            //    MessageBox.Show("모션을 선택해 주세요.", "message");
+            //    return;
+            //}
+
+            //setFlag(ref IsRunProcess);
+
+            ///* 스레드 스타트 대기 상태 진입 */
+            //Run_init_thread = new Thread(new ThreadStart(Run_initialize));
+            //Run_process_thread = new Thread(new ThreadStart(Run_process));
+
+            ///* 초기화 스레드 시작 */
+            //Run_init_thread.Start();
+        }
+
 
         private void btn_goto_Click(object sender, EventArgs e)
         {
@@ -553,6 +599,214 @@ namespace RPCS
             movement_log.AppendText("W : " + tb_setW.Text + Environment.NewLine);
             movement_log.AppendText("P : " + tb_setP.Text + Environment.NewLine);
             movement_log.AppendText("R : " + tb_setR.Text + Environment.NewLine);
+        }
+        // Set Origin 버튼 클릭 이벤트
+        private void btn_setOrigin_Click(object sender, EventArgs e)
+        {
+
+
+            //setFlag(ref IsSetOriginClicked);
+
+            originPos[0] = float.Parse(tb_xposUF.Text);
+            originPos[1] = float.Parse(tb_yposUF.Text);
+            originPos[2] = float.Parse(tb_zposUF.Text);
+            originPos[3] = float.Parse(tb_wUF.Text);
+            originPos[4] = float.Parse(tb_pUF.Text);
+            originPos[5] = float.Parse(tb_rUF.Text);
+
+            lbl_xOrigin.Text = tb_xposUF.Text;
+            lbl_yOrigin.Text = tb_yposUF.Text;
+            lbl_zOrigin.Text = tb_zposUF.Text;
+            lbl_wOrigin.Text = tb_wUF.Text;
+            lbl_pOrigin.Text = tb_pUF.Text;
+            lbl_rOrigin.Text = tb_rUF.Text;
+
+            //string oriStr = "Current Origin : ";
+            //oriStr += tb_xposUF.Text + ", " + tb_yposUF.Text + ", " + tb_zposUF.Text + ", " + tb_wUF.Text + ", " + tb_pUF.Text + ", " + tb_rUF.Text;
+            //label_origin.Text = oriStr;
+
+            tb_setX.Text = "0";
+            tb_setY.Text = "0";
+            tb_setZ.Text = "0";
+            tb_setW.Text = "0";
+            tb_setP.Text = "0";
+            tb_setR.Text = "0";
+
+            movement_log.AppendText("Set Origin" + Environment.NewLine);
+        }
+        // Init Origin 버튼 클릭 이벤트
+        private void btn_initOrigin_Click(object sender, EventArgs e)
+        {
+            //clearFlag(ref IsSetOriginClicked);
+
+            //originPos[0] = 0;     // x
+            //originPos[1] = 0;     // y
+            //originPos[2] = 0;     // z
+            //originPos[3] = 0;     // w
+            //originPos[4] = 0;     // p
+            //originPos[5] = 0;     // r
+
+            lbl_xOrigin.Text = "00";
+            lbl_yOrigin.Text = "00";
+            lbl_zOrigin.Text = "00";
+            lbl_wOrigin.Text = "00";
+            lbl_pOrigin.Text = "00";
+            lbl_rOrigin.Text = "00";
+
+            
+            movement_log.AppendText("Init Origin" + Environment.NewLine);
+        }
+
+        //World Position을 읽어오는 코드
+        //private void readPosition()
+        //{
+        //    while (true)
+        //    {
+        //        if (AllThreadStop)
+        //            return;
+        //        Array xyzwpr = new float[9]; // xyzwpr should have 9 elements(robot 6 axes + 3 extended axes)
+        //        Array config = new short[7]; // configuration of current position
+        //        Array joint = new float[9]; // joint shoud have 9 elements(robot 6 axes + 3 extended axes)
+        //        double[] xyzVal = new double[6]; // xyzwpr buffer
+        //        short intUF = 0; // UF:User coordinate system number
+        //        short intUT = 0; // UT:Tool coordinate system number
+        //        short intValidC = 0; // when current position do not have valid Cartesian values, ValidC will have 0
+        //        short intValidJ = 0; // when current position do not have valid joint values, ValicJ will have 0
+        //        int i; // 단지 for문의 인덱스 역할
+        //        String[] StringArray = new string[3]; // 문자열 배열 선언
+        //        String speed = null;
+        //        object value = null;
+
+        //        /* Read data values from robot to refresh data
+        //         * Data of DataTable object are refreshed
+        //         * If you want to get the latest robot data, you need to call this method*/
+        //        mobjDataTable.Refresh();
+
+        //        //------------------------------------//
+        //        // Get PR[] value, X,Y,Z,W,P,R,Config //
+        //        // and apply Origin Position.         //
+        //        //------------------------------------//        
+        //        //로봇으로 부터 유저프레임 좌표 가져오기
+        //        if (mobjCurPosUF.GetValue(ref xyzwpr, ref config, ref joint, ref intUF, ref intUT, ref intValidC, ref intValidJ))
+        //        {
+        //            for (i = 0; i < 6; i++)
+        //            {
+        //                xyzVal[i] = Convert.ToDouble(xyzwpr.GetValue(i));
+        //            }
+        //            //---------------------------------//
+        //            // Update Current Position Textbox /
+        //            //---------------------------------//
+        //            tb_xposUF.InvokeIfNeeded(() => tb_xposUF.Text = String.Format("{0:F3}", xyzVal[0] - originPos[0]));
+        //            tb_yposUF.InvokeIfNeeded(() => tb_yposUF.Text = String.Format("{0:F3}", xyzVal[1] - originPos[1]));
+        //            tb_zposUF.InvokeIfNeeded(() => tb_zposUF.Text = String.Format("{0:F3}", xyzVal[2] - originPos[2]));
+        //            tb_wUF.InvokeIfNeeded(() => tb_wUF.Text = String.Format("{0:F3}", xyzVal[3] - originPos[3]));
+        //            tb_pUF.InvokeIfNeeded(() => tb_pUF.Text = String.Format("{0:F3}", xyzVal[4] - originPos[4]));
+        //            tb_rUF.InvokeIfNeeded(() => tb_rUF.Text = String.Format("{0:F3}", xyzVal[5] - originPos[5]));
+
+        //            tb_xposUF.InvokeIfNeeded(() => StringArray[0] = tb_xposUF.Text);
+        //            tb_yposUF.InvokeIfNeeded(() => StringArray[1] = tb_yposUF.Text);
+        //            tb_zposUF.InvokeIfNeeded(() => StringArray[2] = tb_zposUF.Text);
+        //        }
+        //        //로봇으로 부터 월드프레임 좌표 가져오기
+        //        if (mobjCurPos.GetValue(ref xyzwpr, ref config, ref joint, ref intUF, ref intUT, ref intValidC, ref intValidJ))
+        //        {
+        //            for (i = 0; i < 6; i++)
+        //            {
+        //                xyzVal[i] = Convert.ToDouble(xyzwpr.GetValue(i));
+        //            }
+        //            //---------------------------------//
+        //            // Update Current Position Textbox //
+        //            //---------------------------------//
+        //            tb_xpos.InvokeIfNeeded(() => tb_xpos.Text = String.Format("{0:F3}", xyzVal[0]));
+        //            tb_ypos.InvokeIfNeeded(() => tb_ypos.Text = String.Format("{0:F3}", xyzVal[1]));
+        //            tb_zpos.InvokeIfNeeded(() => tb_zpos.Text = String.Format("{0:F3}", xyzVal[2]));
+        //            tb_w.InvokeIfNeeded(() => tb_w.Text = String.Format("{0:F3}", xyzVal[3]));
+        //            tb_p.InvokeIfNeeded(() => tb_p.Text = String.Format("{0:F3}", xyzVal[4]));
+        //            tb_r.InvokeIfNeeded(() => tb_r.Text = String.Format("{0:F3}", xyzVal[5]));
+        //        }
+        //        if (mobjSysVarMCR_override.GetValue(ref value))
+        //        {
+        //            speed = Convert.ToString(value);
+        //            if (Convert.ToInt32(speed) < 5)
+        //            {
+        //                mobjSysVarMCR_override.SetValue(5);
+        //                label_Speed.InvokeIfNeeded(() => label_Speed.Text = "5");
+        //            }
+        //            else
+        //            {
+        //                label_Speed.InvokeIfNeeded(() => label_Speed.Text = speed);
+        //            }
+        //            /*
+        //            if (speed == "1" || speed == "0")
+        //                label_Speed.InvokeIfNeeded(() => label_Speed.Text = "FINE");
+        //            else
+        //                label_Speed.InvokeIfNeeded(() => label_Speed.Text = speed);
+        //             */
+        //            // txtResult.AppendText(speed);
+        //        }
+        //        Thread.Sleep(20);
+        //    }
+        //}
+
+        // 플래그 셋, 클리어, 체크 메소드
+        public void setFlag(ref bool flag)
+        {
+            if (flag == false)
+            {
+                flag = true;
+            }
+        }
+
+        public void clearFlag(ref bool flag)
+        {
+            if (flag == true)
+            {
+                flag = false;
+            }
+        }
+
+        public bool checkFlag(bool flag)
+        {
+            if (flag == false)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private void cmdStop_Click(object sender, EventArgs e)
+        {
+
+            //setFlag(ref IsStopClicked);
+
+            ///* (index, value), if R[2] = 1 then TP program stop */
+            //if (mobjNumReg.SetValue(2, 1) == false)
+            //{
+            //    MessageBox.Show("SetNumReg Int Error");
+            //}
+
+            ////강제로 Flag 클리어            
+            //IsRunProcess = false;
+
+            Thread.Sleep(1000);
+            // Run 관련 thread 종료
+            Run_init_thread.Abort();
+            Run_process_thread.Abort();
+
+            /* STOP PMAC */
+            lbl_M1.InvokeIfNeeded(() => lbl_M1.Text = "0.0");
+            lbl_M2.InvokeIfNeeded(() => lbl_M2.Text = "0.0");
+            //CommandOrQuery(1);
+            //CommandOrQuery(9);
+            //CommandOrQuery(3);
+            //CommandOrQuery(9);
+
+            //currentline = 0;
+            //txtResult.Clear();
+            movement_log.AppendText(tb1.Text + " Stop\r\n");
         }
     }
     public static class ControlExtensions
