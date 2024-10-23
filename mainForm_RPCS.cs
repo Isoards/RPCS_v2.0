@@ -21,11 +21,13 @@ namespace RPCS
 
 
         public Turntable turntable { get; private set; }
+        private RobotDisplay robotDisplay;
         private TurntableDisplay turntableDisplay;
         public mainForm_RPCS()
         {
             InitializeComponent();
             SetupTurntable(); // TurntableAngle 설정
+            SetupRobot(); // Robot 설정
             SetupOperationHoursTimer(); // Operation Hours 설정
             updateTimer.Start();
         }
@@ -58,6 +60,15 @@ namespace RPCS
             };
             this.turntable_section.Controls.Add(this.turntableDisplay);
 
+        }
+        private void SetupRobot()
+        {
+            robotDisplay = new RobotDisplay();
+            robotDisplay.Size = new Size(450, 450);  // 크기를 절반으로 줄임
+            
+            robotDisplay.Image = Properties.Resources.robot_v5;
+            robotDisplay.Location = new Point(0, 40);
+            this.robot_state.Controls.Add(robotDisplay);
         }
         private void UpdateTimer_Tick(object sender, EventArgs e)
         {
@@ -599,12 +610,11 @@ namespace RPCS
             movement_log.AppendText("W : " + tb_setW.Text + Environment.NewLine);
             movement_log.AppendText("P : " + tb_setP.Text + Environment.NewLine);
             movement_log.AppendText("R : " + tb_setR.Text + Environment.NewLine);
+            robotDisplay.MoveTo(float.Parse(tb_setX.Text), float.Parse(tb_setY.Text), float.Parse(tb_setZ.Text), float.Parse(tb_setW.Text), float.Parse(tb_setP.Text), float.Parse(tb_setR.Text));
         }
         // Set Origin 버튼 클릭 이벤트
         private void btn_setOrigin_Click(object sender, EventArgs e)
         {
-
-
             //setFlag(ref IsSetOriginClicked);
 
             originPos[0] = float.Parse(tb_xposUF.Text);

@@ -46,12 +46,9 @@ namespace RPCS
             this.mod = new System.Windows.Forms.Panel();
             this.lblOperationHours = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.tgMod = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.connection_status = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -69,8 +66,6 @@ namespace RPCS
             this.lblTurnTableAngle = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.robot_state = new System.Windows.Forms.Panel();
-            this.tbRobotPosition = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.state = new System.Windows.Forms.Panel();
             this.label_Speed = new System.Windows.Forms.Label();
@@ -79,9 +74,7 @@ namespace RPCS
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label77 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -99,7 +92,6 @@ namespace RPCS
             this.tb_setY = new System.Windows.Forms.TextBox();
             this.tb_setX = new System.Windows.Forms.TextBox();
             this.btn_macro1 = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -111,7 +103,6 @@ namespace RPCS
             this.lbl_rOrigin = new System.Windows.Forms.Label();
             this.lbl_pOrigin = new System.Windows.Forms.Label();
             this.lbl_wOrigin = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_zOrigin = new System.Windows.Forms.Label();
             this.lbl_xOrigin = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -125,7 +116,6 @@ namespace RPCS
             this.tb_r = new System.Windows.Forms.Label();
             this.tb_p = new System.Windows.Forms.Label();
             this.tb_w = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tb_zpos = new System.Windows.Forms.Label();
             this.tb_xpos = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -143,7 +133,6 @@ namespace RPCS
             this.tb_zposUF = new System.Windows.Forms.TextBox();
             this.tb_yposUF = new System.Windows.Forms.TextBox();
             this.tb_xposUF = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -170,7 +159,6 @@ namespace RPCS
             this.label65 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label62 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -197,29 +185,38 @@ namespace RPCS
             this.label35 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.tgMod = new System.Windows.Forms.Button();
             this.mod.SuspendLayout();
             this.connection_status.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.turntable_section.SuspendLayout();
             this.robot_state.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.state.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.target_position.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.user_position.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.batch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lv_pos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // mod
@@ -256,19 +253,6 @@ namespace RPCS
             this.label30.TabIndex = 12;
             this.label30.Text = "Operation Hours";
             // 
-            // tgMod
-            // 
-            this.tgMod.BackgroundImage = global::RPCS.Properties.Resources.button_mod2;
-            this.tgMod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tgMod.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tgMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tgMod.Location = new System.Drawing.Point(47, 46);
-            this.tgMod.Name = "tgMod";
-            this.tgMod.Size = new System.Drawing.Size(328, 40);
-            this.tgMod.TabIndex = 11;
-            this.tgMod.UseVisualStyleBackColor = true;
-            this.tgMod.Click += new System.EventHandler(this.tgMod_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -304,26 +288,6 @@ namespace RPCS
             this.connection_status.Name = "connection_status";
             this.connection_status.Size = new System.Drawing.Size(421, 136);
             this.connection_status.TabIndex = 1;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::RPCS.Properties.Resources.red_dot;
-            this.pictureBox10.Location = new System.Drawing.Point(83, 96);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox10.TabIndex = 23;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::RPCS.Properties.Resources.green_dot;
-            this.pictureBox11.Location = new System.Drawing.Point(83, 53);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox11.TabIndex = 22;
-            this.pictureBox11.TabStop = false;
             // 
             // label60
             // 
@@ -507,35 +471,12 @@ namespace RPCS
             // 
             this.robot_state.BackColor = System.Drawing.Color.White;
             this.robot_state.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.robot_state.Controls.Add(this.tbRobotPosition);
-            this.robot_state.Controls.Add(this.pictureBox2);
             this.robot_state.Controls.Add(this.label11);
             this.robot_state.Location = new System.Drawing.Point(526, 234);
             this.robot_state.Margin = new System.Windows.Forms.Padding(2);
             this.robot_state.Name = "robot_state";
             this.robot_state.Size = new System.Drawing.Size(422, 456);
             this.robot_state.TabIndex = 3;
-            // 
-            // tbRobotPosition
-            // 
-            this.tbRobotPosition.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tbRobotPosition.Location = new System.Drawing.Point(60, 397);
-            this.tbRobotPosition.Name = "tbRobotPosition";
-            this.tbRobotPosition.ReadOnly = true;
-            this.tbRobotPosition.Size = new System.Drawing.Size(300, 33);
-            this.tbRobotPosition.TabIndex = 13;
-            this.tbRobotPosition.Text = "X : 0 | Y : 0 | Z : 0";
-            this.tbRobotPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::RPCS.Properties.Resources.robot_v3;
-            this.pictureBox2.Location = new System.Drawing.Point(60, 60);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // label11
             // 
@@ -636,16 +577,6 @@ namespace RPCS
             this.label55.TabIndex = 40;
             this.label55.Text = "M1 RPM";
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::RPCS.Properties.Resources.yellow;
-            this.pictureBox9.Location = new System.Drawing.Point(329, 102);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox9.TabIndex = 38;
-            this.pictureBox9.TabStop = false;
-            // 
             // label77
             // 
             this.label77.AutoSize = true;
@@ -656,16 +587,6 @@ namespace RPCS
             this.label77.Size = new System.Drawing.Size(72, 24);
             this.label77.TabIndex = 39;
             this.label77.Text = "Waiting";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::RPCS.Properties.Resources.green_dot;
-            this.pictureBox8.Location = new System.Drawing.Point(125, 102);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox8.TabIndex = 36;
-            this.pictureBox8.TabStop = false;
             // 
             // label74
             // 
@@ -876,15 +797,6 @@ namespace RPCS
             this.btn_macro1.UseVisualStyleBackColor = false;
             this.btn_macro1.Click += new System.EventHandler(this.btn_macro1_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::RPCS.Properties.Resources.Line;
-            this.pictureBox4.Location = new System.Drawing.Point(204, 51);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(3, 31);
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -893,7 +805,7 @@ namespace RPCS
             this.label18.Location = new System.Drawing.Point(291, 51);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(30, 32);
+            this.label18.Size = new System.Drawing.Size(31, 32);
             this.label18.TabIndex = 19;
             this.label18.Text = "P";
             // 
@@ -905,7 +817,7 @@ namespace RPCS
             this.label19.Location = new System.Drawing.Point(357, 51);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(30, 32);
+            this.label19.Size = new System.Drawing.Size(31, 32);
             this.label19.TabIndex = 18;
             this.label19.Text = "R";
             // 
@@ -917,7 +829,7 @@ namespace RPCS
             this.label20.Location = new System.Drawing.Point(221, 51);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(39, 32);
+            this.label20.Size = new System.Drawing.Size(40, 32);
             this.label20.TabIndex = 17;
             this.label20.Text = "W";
             // 
@@ -929,7 +841,7 @@ namespace RPCS
             this.label21.Location = new System.Drawing.Point(136, 51);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(30, 32);
+            this.label21.Size = new System.Drawing.Size(31, 32);
             this.label21.TabIndex = 16;
             this.label21.Text = "Z";
             // 
@@ -941,7 +853,7 @@ namespace RPCS
             this.label22.Location = new System.Drawing.Point(74, 51);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(31, 32);
+            this.label22.Size = new System.Drawing.Size(32, 32);
             this.label22.TabIndex = 15;
             this.label22.Text = "Y";
             // 
@@ -953,7 +865,7 @@ namespace RPCS
             this.label23.Location = new System.Drawing.Point(12, 51);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(31, 32);
+            this.label23.Size = new System.Drawing.Size(32, 32);
             this.label23.TabIndex = 14;
             this.label23.Text = "X";
             // 
@@ -1034,15 +946,6 @@ namespace RPCS
             this.lbl_wOrigin.Size = new System.Drawing.Size(37, 30);
             this.lbl_wOrigin.TabIndex = 59;
             this.lbl_wOrigin.Text = "00";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RPCS.Properties.Resources.Line;
-            this.pictureBox1.Location = new System.Drawing.Point(207, 98);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(3, 31);
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
             // 
             // lbl_zOrigin
             // 
@@ -1185,15 +1088,6 @@ namespace RPCS
             this.tb_w.Size = new System.Drawing.Size(37, 30);
             this.tb_w.TabIndex = 45;
             this.tb_w.Text = "00";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::RPCS.Properties.Resources.Line;
-            this.pictureBox5.Location = new System.Drawing.Point(207, 37);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(3, 31);
-            this.pictureBox5.TabIndex = 41;
-            this.pictureBox5.TabStop = false;
             // 
             // tb_zpos
             // 
@@ -1387,15 +1281,6 @@ namespace RPCS
             this.tb_xposUF.Size = new System.Drawing.Size(30, 33);
             this.tb_xposUF.TabIndex = 28;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::RPCS.Properties.Resources.Line;
-            this.pictureBox3.Location = new System.Drawing.Point(204, 51);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(3, 31);
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -1404,7 +1289,7 @@ namespace RPCS
             this.label15.Location = new System.Drawing.Point(291, 51);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(30, 32);
+            this.label15.Size = new System.Drawing.Size(31, 32);
             this.label15.TabIndex = 12;
             this.label15.Text = "P";
             // 
@@ -1416,7 +1301,7 @@ namespace RPCS
             this.label14.Location = new System.Drawing.Point(357, 51);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(30, 32);
+            this.label14.Size = new System.Drawing.Size(31, 32);
             this.label14.TabIndex = 11;
             this.label14.Text = "R";
             // 
@@ -1428,7 +1313,7 @@ namespace RPCS
             this.label13.Location = new System.Drawing.Point(221, 51);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(39, 32);
+            this.label13.Size = new System.Drawing.Size(40, 32);
             this.label13.TabIndex = 10;
             this.label13.Text = "W";
             // 
@@ -1440,7 +1325,7 @@ namespace RPCS
             this.label12.Location = new System.Drawing.Point(136, 51);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(30, 32);
+            this.label12.Size = new System.Drawing.Size(31, 32);
             this.label12.TabIndex = 9;
             this.label12.Text = "Z";
             // 
@@ -1476,7 +1361,7 @@ namespace RPCS
             this.label2.Location = new System.Drawing.Point(74, 51);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 32);
+            this.label2.Size = new System.Drawing.Size(32, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Y";
             // 
@@ -1488,7 +1373,7 @@ namespace RPCS
             this.label1.Location = new System.Drawing.Point(12, 51);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 32);
+            this.label1.Size = new System.Drawing.Size(32, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "X";
             // 
@@ -1531,6 +1416,7 @@ namespace RPCS
             this.lv_pos.AllowUserToAddRows = false;
             this.lv_pos.AllowUserToDeleteRows = false;
             this.lv_pos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.lv_pos.RowPrePaint += DataGridView_RowPrePaint;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -1642,7 +1528,7 @@ namespace RPCS
             this.label65.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label65.Location = new System.Drawing.Point(739, 440);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(30, 32);
+            this.label65.Size = new System.Drawing.Size(31, 32);
             this.label65.TabIndex = 41;
             this.label65.Text = "0";
             // 
@@ -1652,7 +1538,7 @@ namespace RPCS
             this.label64.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label64.Location = new System.Drawing.Point(765, 440);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(74, 32);
+            this.label64.Size = new System.Drawing.Size(75, 32);
             this.label64.TabIndex = 40;
             this.label64.Text = "/ 100";
             // 
@@ -1662,17 +1548,9 @@ namespace RPCS
             this.label63.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label63.Location = new System.Drawing.Point(520, 440);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(219, 32);
+            this.label63.Size = new System.Drawing.Size(220, 32);
             this.label63.TabIndex = 39;
             this.label63.Text = "Line in Progress :";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(507, 440);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(10, 31);
-            this.pictureBox7.TabIndex = 38;
-            this.pictureBox7.TabStop = false;
             // 
             // label62
             // 
@@ -1680,7 +1558,7 @@ namespace RPCS
             this.label62.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label62.Location = new System.Drawing.Point(446, 440);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(60, 32);
+            this.label62.Size = new System.Drawing.Size(61, 32);
             this.label62.TabIndex = 37;
             this.label62.Text = "0 %";
             // 
@@ -1690,7 +1568,7 @@ namespace RPCS
             this.label61.Font = new System.Drawing.Font("Pretendard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label61.Location = new System.Drawing.Point(26, 440);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(210, 32);
+            this.label61.Size = new System.Drawing.Size(211, 32);
             this.label61.TabIndex = 36;
             this.label61.Text = "Overall Progress";
             // 
@@ -1988,6 +1866,103 @@ namespace RPCS
             this.label36.TabIndex = 5;
             this.label36.Text = "Batch Completion Log";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(507, 440);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(10, 31);
+            this.pictureBox7.TabIndex = 38;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::RPCS.Properties.Resources.Line;
+            this.pictureBox3.Location = new System.Drawing.Point(204, 51);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 31);
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RPCS.Properties.Resources.Line;
+            this.pictureBox1.Location = new System.Drawing.Point(207, 98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(3, 31);
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::RPCS.Properties.Resources.Line;
+            this.pictureBox5.Location = new System.Drawing.Point(207, 37);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(3, 31);
+            this.pictureBox5.TabIndex = 41;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::RPCS.Properties.Resources.Line;
+            this.pictureBox4.Location = new System.Drawing.Point(204, 51);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(3, 31);
+            this.pictureBox4.TabIndex = 20;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::RPCS.Properties.Resources.yellow;
+            this.pictureBox9.Location = new System.Drawing.Point(329, 102);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(8, 8);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox9.TabIndex = 38;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::RPCS.Properties.Resources.green_dot;
+            this.pictureBox8.Location = new System.Drawing.Point(125, 102);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(8, 8);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox8.TabIndex = 36;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::RPCS.Properties.Resources.red_dot;
+            this.pictureBox10.Location = new System.Drawing.Point(83, 96);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(8, 8);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 23;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::RPCS.Properties.Resources.green_dot;
+            this.pictureBox11.Location = new System.Drawing.Point(83, 53);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(8, 8);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox11.TabIndex = 22;
+            this.pictureBox11.TabStop = false;
+            // 
+            // tgMod
+            // 
+            this.tgMod.BackgroundImage = global::RPCS.Properties.Resources.button_mod2;
+            this.tgMod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tgMod.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tgMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tgMod.Location = new System.Drawing.Point(47, 46);
+            this.tgMod.Name = "tgMod";
+            this.tgMod.Size = new System.Drawing.Size(328, 40);
+            this.tgMod.TabIndex = 11;
+            this.tgMod.UseVisualStyleBackColor = true;
+            this.tgMod.Click += new System.EventHandler(this.tgMod_Click);
+            // 
             // mainForm_RPCS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2017,37 +1992,36 @@ namespace RPCS
             this.mod.PerformLayout();
             this.connection_status.ResumeLayout(false);
             this.connection_status.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.turntable_section.ResumeLayout(false);
             this.turntable_section.PerformLayout();
             this.robot_state.ResumeLayout(false);
             this.robot_state.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.state.ResumeLayout(false);
             this.state.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.target_position.ResumeLayout(false);
             this.target_position.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.user_position.ResumeLayout(false);
             this.user_position.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.batch.ResumeLayout(false);
             this.batch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lv_pos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2083,7 +2057,6 @@ namespace RPCS
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -2174,7 +2147,6 @@ namespace RPCS
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TextBox tbRobotPosition;
         private System.Windows.Forms.DataGridView lv_pos;
         private System.Windows.Forms.Label lblOperationHours;
         private System.Windows.Forms.Timer updateTimer;

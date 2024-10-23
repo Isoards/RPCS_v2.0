@@ -47,6 +47,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.RotaryR_txt = new System.Windows.Forms.TextBox();
+            this.Rorpm_btn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.target_position.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +58,7 @@
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.label53.Location = new System.Drawing.Point(12, 280);
+            this.label53.Location = new System.Drawing.Point(12, 357);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(147, 30);
@@ -137,6 +140,9 @@
             // 
             this.target_position.BackColor = System.Drawing.Color.White;
             this.target_position.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.target_position.Controls.Add(this.RotaryR_txt);
+            this.target_position.Controls.Add(this.Rorpm_btn);
+            this.target_position.Controls.Add(this.label4);
             this.target_position.Controls.Add(this.btn_speedup);
             this.target_position.Controls.Add(this.btn_exit);
             this.target_position.Controls.Add(this.btn_speeddown);
@@ -158,7 +164,7 @@
             this.target_position.Location = new System.Drawing.Point(11, 11);
             this.target_position.Margin = new System.Windows.Forms.Padding(2);
             this.target_position.Name = "target_position";
-            this.target_position.Size = new System.Drawing.Size(471, 342);
+            this.target_position.Size = new System.Drawing.Size(471, 421);
             this.target_position.TabIndex = 61;
             // 
             // btn_speedup
@@ -166,7 +172,7 @@
             this.btn_speedup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_speedup.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_speedup.ForeColor = System.Drawing.Color.White;
-            this.btn_speedup.Location = new System.Drawing.Point(164, 280);
+            this.btn_speedup.Location = new System.Drawing.Point(164, 357);
             this.btn_speedup.Margin = new System.Windows.Forms.Padding(2);
             this.btn_speedup.Name = "btn_speedup";
             this.btn_speedup.Size = new System.Drawing.Size(118, 35);
@@ -194,7 +200,7 @@
             this.btn_speeddown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(48)))));
             this.btn_speeddown.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_speeddown.ForeColor = System.Drawing.Color.White;
-            this.btn_speeddown.Location = new System.Drawing.Point(286, 281);
+            this.btn_speeddown.Location = new System.Drawing.Point(286, 358);
             this.btn_speeddown.Margin = new System.Windows.Forms.Padding(2);
             this.btn_speeddown.Name = "btn_speeddown";
             this.btn_speeddown.Size = new System.Drawing.Size(147, 35);
@@ -278,7 +284,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(12, 225);
+            this.label3.Location = new System.Drawing.Point(12, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(173, 30);
             this.label3.TabIndex = 4;
@@ -294,12 +300,46 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "PMAC Settings";
             // 
+            // RotaryR_txt
+            // 
+            this.RotaryR_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.RotaryR_txt.Font = new System.Drawing.Font("Pretendard", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.RotaryR_txt.Location = new System.Drawing.Point(197, 227);
+            this.RotaryR_txt.Name = "RotaryR_txt";
+            this.RotaryR_txt.Size = new System.Drawing.Size(84, 33);
+            this.RotaryR_txt.TabIndex = 63;
+            // 
+            // Rorpm_btn
+            // 
+            this.Rorpm_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Rorpm_btn.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Rorpm_btn.ForeColor = System.Drawing.Color.White;
+            this.Rorpm_btn.Location = new System.Drawing.Point(286, 227);
+            this.Rorpm_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.Rorpm_btn.Name = "Rorpm_btn";
+            this.Rorpm_btn.Size = new System.Drawing.Size(147, 35);
+            this.Rorpm_btn.TabIndex = 64;
+            this.Rorpm_btn.Text = "GO";
+            this.Rorpm_btn.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(12, 226);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 30);
+            this.label4.TabIndex = 62;
+            this.label4.Text = "Rotary RPM";
+            // 
             // settingForm_RPCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(496, 369);
+            this.ClientSize = new System.Drawing.Size(496, 443);
             this.Controls.Add(this.target_position);
             this.Name = "settingForm_RPCS";
             this.Text = "settingForm";
@@ -330,5 +370,8 @@
         private System.Windows.Forms.Button btn_speedup;
         private System.Windows.Forms.Button btn_speeddown;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.TextBox RotaryR_txt;
+        private System.Windows.Forms.Button Rorpm_btn;
+        private System.Windows.Forms.Label label4;
     }
 }

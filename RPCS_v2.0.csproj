@@ -135,9 +135,6 @@
     <None Include="Resources\turntable.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Robot.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Line.png" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\robot_v3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot_v5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
