@@ -225,12 +225,12 @@ public class RobotPosition
             // 안티앨리어싱 적용
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             // 중심점
-            float centerX = 300;
+            float centerX = 240;
             float centerY = 110;
 
             // 원 관련 변수 정의
-            float circleRadius = 100;
-            float circleY = 250;
+            float circleRadius = 100; // 원 지름
+            float circleY = 210; // 원점 좌표
 
             // X축 로봇 팔 관련 변수
             float arm1MaxLength = circleRadius * 2; // 원의 지름과 동일하게 설정
@@ -281,6 +281,7 @@ public class RobotPosition
             {
                 g.DrawLine(pen, armEndX, armEndY + 5, armEndX, circleY - circleRadius);
             }
+
             // Y축 로봇팔이 끝나는 지점 가로선
             using (Pen redPen = new Pen(Color.FromArgb(255, 59, 48), 5))
             {
@@ -308,8 +309,8 @@ public class RobotPosition
             {
                 // X,Y,Z 좌표 텍스트
                 string coordinates = $"X: {currentPosition.X:F2}\nY: {currentPosition.Y:F2}\nZ: {currentPosition.Z:F2}";
-                float textX = arm2X + arm2Width + 20; // 로봇 팔 오른쪽에 표시
-                float textY = centerY - 65 + arm2Height / 2; // Y축 로봇 팔의 중간 높이에 표시
+                float textX = 75; // 텍스트 X 좌표
+                float textY = 100;// 텍스트 Y 좌표
 
                 // 텍스트 배경
                 using (Brush bgBrush = new SolidBrush(Color.FromArgb(220, 255, 255, 255)))
@@ -327,6 +328,24 @@ public class RobotPosition
 
                 // 텍스트 그리기
                 g.DrawString(coordinates, font, textBrush, textX, textY, sf);
+
+                // X,Y,Z 텍스트 박스에서 로봇 팔 끝까지 점선 그리기
+                using (Pen dashedPen = new Pen(Color.FromArgb(224,224,224), 4))
+                {
+                    dashedPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+
+                    // 텍스트 박스의 오른쪽 아래 좌표 계산
+                    SizeF textSize = g.MeasureString(coordinates, font);
+                    float startX = textX + textSize.Width + 4; // 텍스트 박스 오른쪽 끝 (여백 4 포함)
+                    float startY = textY + textSize.Height / 2 + 2; // 텍스트 박스 아래쪽 (여백 2 포함)
+
+                    // 로봇 팔 끝의 가로선 중심점
+                    float endX = armEndX;
+                    float endY = armEndY;
+
+                    // 점선 그리기
+                    g.DrawLine(dashedPen, startX, startY, endX, endY);
+                }
 
                 // W,P,R 텍스트 (십자선 옆)
                 string wprText = $"W: {currentPosition.W:F2}\nP: {currentPosition.P:F2}\nR: {currentPosition.R:F2}";
@@ -348,6 +367,7 @@ public class RobotPosition
 
                 g.DrawString(wprText, font, textBrush, wprTextX, wprTextY, sf);
             }
+
 
             // 각도 텍스트 표시 (원의 끝점)
             using (Font angleFont = new Font("맑은 고딕", 12))

@@ -64,9 +64,9 @@ namespace RPCS
         private void SetupRobot()
         {
             robotDisplay = new RobotDisplay();
-            robotDisplay.Size = new Size(450, 450);  // 크기를 절반으로 줄임
+            robotDisplay.Size = new Size(400, 350);  // 크기를 절반으로 줄임
             
-            robotDisplay.Image = Properties.Resources.robot_v5;
+            robotDisplay.Image = Properties.Resources.robot_v7;
             robotDisplay.Location = new Point(0, 40);
             this.robot_state.Controls.Add(robotDisplay);
         }
@@ -75,6 +75,7 @@ namespace RPCS
             //turntable.GetTurnTableAngle();
             //lblTurnTableAngle.Text = $"{turntable.Angle:F2}°";
             lblTurnTableAngle.InvokeIfNeeded(() => lblTurnTableAngle.Text = $"{turntable.Angle:F0}°");
+            lbl_angle.InvokeIfNeeded(() => lbl_angle.Text = $"{turntable.Angle:F0}°");
             turntableDisplay.Invalidate();
         }
 

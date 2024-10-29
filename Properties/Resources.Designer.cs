@@ -183,6 +183,16 @@ namespace RPCS.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap robot_v7 {
+            get {
+                object obj = ResourceManager.GetObject("robot_v7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap turntable {
             get {
                 object obj = ResourceManager.GetObject("turntable", resourceCulture);
